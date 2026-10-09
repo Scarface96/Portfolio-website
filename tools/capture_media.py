@@ -217,7 +217,7 @@ def app_shots(browser, slug, url, steps):
         mobile = isinstance(cap, tuple)
         ctx = browser.new_context(viewport={"width": 390, "height": 844} if mobile else VIEW, device_scale_factor=1.5 if mobile else 1)
         page = ctx.new_page()
-        page.on("pageerror", lambda e: print("   page error:", str(e)[:200]))
+        page.on("pageerror", lambda e: print("   page error:", str(e)[:200], "\n", (e.stack or "")[:1500], flush=True))
         page.goto(url)
         settle(page, 1500)
         try:
@@ -246,15 +246,25 @@ def nothing(page):
 
 
 def weather(browser, url):
-    def pick(page):
-        page.get_by_role("button", name="Cape Town").first.click()
-        page.wait_for_selector("text=Feels like", timeout=20000)
-        page.wait_for_timeout(1200)
+    def pick_city(name):
+        def pick(page):
+            for attempt in range(3):  # the forecast API occasionally stalls on CI runners; retry with a fresh load
+                page.get_by_role("button", name=name).first.click()
+                try:
+                    page.wait_for_selector("text=Feels like", timeout=15000)
+                    break
+                except Exception:
+                    if attempt == 2:
+                        raise
+                    page.reload(); settle(page, 1500)
+            page.wait_for_timeout(1200)
+        return pick
+    pick = pick_city("Cape Town")
     def search(page):
         page.fill("input[type=search]", "Lisbon")
         page.wait_for_selector("#city-results li", timeout=15000)
         page.wait_for_timeout(800)
-    steps = [(pick, "cover"), (search, "City search with suggestions"), (pick, "Forecast for Cape Town"), (pick, ("mobile", "Forecast on mobile"))]
+    steps = [(pick, "cover"), (search, "City search with suggestions"), (pick_city("Tokyo"), "Forecast for Tokyo"), (pick, ("mobile", "Forecast on mobile"))]
     gallery = app_shots(browser, "weather", url, steps)
     def script(pg):
         pg.wait_for_timeout(800)
