@@ -310,16 +310,25 @@ def netflix(browser, url):
         page.get_by_role("button", name="More info").click()
         page.wait_for_timeout(3000)
     def search(page):
-        page.evaluate("location.hash = '#/search?q=dune'")
+        page.goto(url + "?fresh=1#/search?q=dune"); settle(page, 1500)
         page.wait_for_selector("main img", timeout=20000)
         page.wait_for_timeout(3500)
         print("   netflix search text:", page.inner_text("body")[:160].replace("\n", " | "))
     def signin(page):
-        page.evaluate("location.hash = '#/login'")
+        page.goto(url + "?fresh=2#/login"); settle(page, 1500)
         page.wait_for_selector("text=Welcome back", timeout=20000)
         page.wait_for_timeout(3500)
     steps = [(home, "cover"), (home, "Home with trending hero and genre rows"), (info, "Details dialog with trailer, cast and similar films"),
              (search, "Search across the TMDB catalogue"), (signin, "Sign-in page with poster wall")]
+    # Diagnostic: does navigating away from Home crash the app?
+    ctx = browser.new_context(viewport=VIEW); pg = ctx.new_page()
+    errs = []
+    pg.on("pageerror", lambda e: errs.append(str(e)))
+    pg.goto(url); settle(pg, 2500)
+    print("   scrollTo returns:", pg.evaluate("String(window.scrollTo(0, 0))"), "| is native:", pg.evaluate("String(window.scrollTo).includes('native code')"), flush=True)
+    pg.evaluate("location.hash = '#/login'"); pg.wait_for_timeout(2500)
+    print("   home -> login errors:", errs, "| text:", pg.inner_text("body")[:80].replace("\n", " "), flush=True)
+    ctx.close()
     gallery = app_shots(browser, "netflix", url, steps)
     def script(pg):
         pg.wait_for_timeout(2500)
