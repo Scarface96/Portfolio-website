@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="420" viewBox="0 0 900 420" role="img" aria-labelledby="title desc">
+  <title id="title">Portfolio Skills Orbit</title>
+  <desc id="desc">Animated orbit of data, web, automation and AI skills</desc>
+  <defs>
+    <radialGradient id="center" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#7c3aed"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </radialGradient>
+  </defs>
+  <rect width="900" height="420" rx="28" fill="#0b1220"/>
+  <ellipse cx="450" cy="210" rx="285" ry="125" fill="none" stroke="#334155" stroke-width="2" stroke-dasharray="8 10"/>
+  <ellipse cx="450" cy="210" rx="190" ry="80" fill="none" stroke="#1e293b" stroke-width="2"/>
+  <circle cx="450" cy="210" r="82" fill="url(#center)" stroke="#a78bfa" stroke-width="2">
+    <animate attributeName="r" values="78;88;78" dur="4s" repeatCount="indefinite"/>
+  </circle>
+  <text x="450" y="202" text-anchor="middle" fill="#fff" font-family="Arial" font-size="28" font-weight="700">TONY</text>
+  <text x="450" y="235" text-anchor="middle" fill="#c4b5fd" font-family="Arial" font-size="19">PORTFOLIO</text>
+  <g font-family="Arial" font-size="18" font-weight="700" text-anchor="middle">
+    <g><circle cx="165" cy="210" r="48" fill="#0e7490"/><text x="165" y="216" fill="white">DATA</text><animateTransform attributeName="transform" type="translate" values="0 0;12 -12;0 0" dur="4s" repeatCount="indefinite"/></g>
+    <g><circle cx="735" cy="210" r="48" fill="#1d4ed8"/><text x="735" y="216" fill="white">WEB</text><animateTransform attributeName="transform" type="translate" values="0 0;-12 12;0 0" dur="4.5s" repeatCount="indefinite"/></g>
+    <g><circle cx="450" cy="85" r="48" fill="#7e22ce"/><text x="450" y="91" fill="white">AI</text><animateTransform attributeName="transform" type="translate" values="0 0;0 15;0 0" dur="5s" repeatCount="indefinite"/></g>
+    <g><circle cx="450" cy="335" r="58" fill="#be185d"/><text x="450" y="341" fill="white" font-size="16">AUTOMATION</text><animateTransform attributeName="transform" type="translate" values="0 0;0 -15;0 0" dur="5.5s" repeatCount="indefinite"/></g>
+  </g>
+  <circle cx="450" cy="210" r="7" fill="#22d3ee"><animate attributeName="cx" values="165;450;735;450;165" dur="7s" repeatCount="indefinite"/><animate attributeName="cy" values="210;85;210;335;210" dur="7s" repeatCount="indefinite"/></circle>
+</svg>
