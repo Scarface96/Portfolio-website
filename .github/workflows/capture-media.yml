@@ -43,14 +43,14 @@ jobs:
           python -m playwright install --with-deps chromium
 
       - name: Build every project and capture media
-        run: python -u tools/capture_media.py ${{ github.event.inputs.projects }} 2>&1 | tee tools/capture-log.txt; exit ${PIPESTATUS[0]}
+        run: python -u tools/capture_media.py ${{ github.event.inputs.projects }}
 
       - name: Commit the new media
         if: always()
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add media tools/media-manifest.json tools/capture-log.txt tools/debug-*.png 2>/dev/null || git add media tools/media-manifest.json tools/capture-log.txt
+          git add media tools/media-manifest.json
           git diff --cached --quiet && echo "No changes" && exit 0
           git commit -m "Capture fresh project media"
           git push
