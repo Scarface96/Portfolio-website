@@ -217,6 +217,7 @@ def app_shots(browser, slug, url, steps):
         mobile = isinstance(cap, tuple)
         ctx = browser.new_context(viewport={"width": 390, "height": 844} if mobile else VIEW, device_scale_factor=1.5 if mobile else 1)
         page = ctx.new_page()
+        page.on("pageerror", lambda e: print("   page error:", str(e)[:200]))
         page.goto(url)
         settle(page, 1500)
         fn(page)
@@ -239,16 +240,21 @@ def nothing(page):
 
 def weather(browser, url):
     def pick(page):
-        page.get_by_role("button", name="Cape Town").click()
+        page.get_by_role("button", name="Cape Town").first.click()
+        page.wait_for_selector("text=Feels like", timeout=20000)
+        page.wait_for_timeout(1200)
     def search(page):
-        page.fill("input[type=search]", "Pretoria")
-        page.wait_for_timeout(1500)
+        page.fill("input[type=search]", "Lisbon")
+        page.wait_for_selector("#city-results li", timeout=15000)
+        page.wait_for_timeout(800)
     steps = [(pick, "cover"), (search, "City search with suggestions"), (pick, "Forecast for Cape Town"), (pick, ("mobile", "Forecast on mobile"))]
     gallery = app_shots(browser, "weather", url, steps)
     def script(pg):
         pg.wait_for_timeout(800)
-        pg.fill("input[type=search]", "Cape To"); pg.wait_for_timeout(1500)
-        pg.keyboard.press("Enter"); pg.wait_for_timeout(2500)
+        pg.type("input[type=search]", "Lisbon", delay=120)
+        pg.wait_for_selector("#city-results li", timeout=15000); pg.wait_for_timeout(1200)
+        pg.keyboard.press("Enter")
+        pg.wait_for_selector("text=Feels like", timeout=20000); pg.wait_for_timeout(2000)
         smooth_scroll(pg, 7000)
     record(browser, url, MEDIA / "weather" / "video.mp4", script)
     return gallery
@@ -256,7 +262,8 @@ def weather(browser, url):
 
 def movie(browser, url):
     def search(page):
-        page.fill("input[type=search]", "interstellar")
+        page.fill("input[type=search]", "dune")
+        page.wait_for_selector(".card-open", timeout=20000)
         page.wait_for_timeout(2500)
     def details(page):
         search(page)
@@ -270,7 +277,7 @@ def movie(browser, url):
     steps = [(search, "cover"), (search, "Search results with filters"), (details, "Details with ratings from three sources"), (watchlist, "Watchlist with watched tracking")]
     gallery = app_shots(browser, "movie", url, steps)
     def script(pg):
-        pg.type("input[type=search]", "interstellar", delay=90); pg.wait_for_timeout(2500)
+        pg.type("input[type=search]", "dune", delay=120); pg.wait_for_selector(".card-open", timeout=20000); pg.wait_for_timeout(2500)
         pg.locator(".card-open").first.click(); pg.wait_for_timeout(3500)
         pg.keyboard.press("Escape"); pg.wait_for_timeout(500)
         smooth_scroll(pg, 5000)
@@ -286,10 +293,13 @@ def netflix(browser, url):
         page.get_by_role("button", name="More info").click()
         page.wait_for_timeout(3000)
     def search(page):
-        page.goto(url + "#/search?q=dune")
+        page.evaluate("location.hash = '#/search?q=dune'")
+        page.wait_for_selector("main img", timeout=20000)
         page.wait_for_timeout(3500)
+        print("   netflix search text:", page.inner_text("body")[:160].replace("\n", " | "))
     def signin(page):
-        page.goto(url + "#/login")
+        page.evaluate("location.hash = '#/login'")
+        page.wait_for_selector("text=Welcome back", timeout=20000)
         page.wait_for_timeout(3500)
     steps = [(home, "cover"), (home, "Home with trending hero and genre rows"), (info, "Details dialog with trailer, cast and similar films"),
              (search, "Search across the TMDB catalogue"), (signin, "Sign-in page with poster wall")]
