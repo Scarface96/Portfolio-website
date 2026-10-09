@@ -1,0 +1,448 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Tony Mulunda | Data Analyst, BI and Front-End Developer</title>
+<meta name="description" content="Tony Mulunda is a data analyst, BI developer and front-end developer who turns raw data into clear decisions and builds the interfaces people use to act on them.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Antonio:wght@500;600;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Martian+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="css/style.css">
+
+<meta property="og:title" content="Tony Mulunda | Data Analyst, BI and Front-End Developer">
+<meta property="og:description" content="I turn raw data into clear business decisions, and build the web interfaces people use to act on them.">
+<meta property="og:image" content="media/kaidis/cover.webp">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 64 64%22%3E%3Ccircle cx=%2232%22 cy=%2232%22 r=%2230%22 fill=%22%230D6A62%22/%3E%3Ctext x=%2232%22 y=%2241%22 font-family=%22Arial Narrow,Arial%22 font-weight=%22700%22 font-size=%2226%22 text-anchor=%22middle%22 fill=%22%23F2F6F2%22%3ETM%3C/text%3E%3C/svg%3E">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="nav">
+  <div class="wrap nav-inner">
+    <a class="brand" href="#top" aria-label="Tony Mulunda, back to top"><span class="brand-mark">TM</span><span class="brand-name">Tony Mulunda</span></a>
+    <nav class="nav-links" id="navlinks" aria-label="Sections">
+      <a href="#work" data-sec="work">Work</a>
+      <a href="#about" data-sec="about">About</a>
+      <a href="#toolkit" data-sec="toolkit">Toolkit</a>
+      <a href="#contact" data-sec="contact">Contact</a>
+    </nav>
+    <button class="icon-btn" id="themeBtn" type="button" aria-label="Switch colour theme">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.2M12 19.3v2.2M2.5 12h2.2M19.3 12h2.2M5.3 5.3l1.6 1.6M17.1 17.1l1.6 1.6M5.3 18.7l1.6-1.6M17.1 6.9l1.6-1.6"/></svg>
+    </button>
+    <button class="menu-btn" id="menuBtn" type="button" aria-expanded="false" aria-controls="navlinks">Menu</button>
+  </div>
+  <div class="progress" aria-hidden="true"><span id="progressBar"></span></div>
+</header>
+
+<main id="main">
+
+<!-- HERO -->
+<section class="hero graph" id="top">
+  <div class="wrap hero-grid">
+    <div class="hero-copy">
+      <span class="eyebrow"><span class="pulse" aria-hidden="true"></span>Open to roles and freelance work</span>
+      <h1 class="hero-name"><span class="line"><span>Tony</span></span><span class="line"><span>Mulunda</span></span></h1>
+      <p class="role"><span aria-hidden="true">role =</span><span class="role-text" id="role" aria-hidden="true">"Data Analyst"</span><span class="sr-only">Data Analyst, BI Developer and Front-End Developer</span></p>
+      <p class="lede">I turn raw data into clear business decisions, and build the web interfaces people use to act on them.</p>
+      <div class="cta">
+        <a class="btn primary" href="#work">See the work <span class="arr" aria-hidden="true">→</span></a>
+        <a class="btn" href="#contact">Get in touch</a>
+      </div>
+    </div>
+    <figure class="hero-fig">
+      <div class="fig-frame" id="figFrame">
+        <div class="fig-head"><span id="figN">n = 520</span><span id="figR">r = 0.00</span></div>
+        <canvas id="scatter" aria-label="Animated scatter plot whose points settle into a positive trend line" role="img"></canvas>
+        <div class="readout" id="readout"></div>
+      </div>
+      <figcaption><b>Fig. 1</b><span>Signal from noise. Move through the data to inspect it.</span></figcaption>
+    </figure>
+  </div>
+  <div class="wrap">
+    <div class="kpis">
+      <div class="kpi"><span class="kpi-num" data-count="29">29</span><span class="kpi-label">public repositories on GitHub</span></div>
+      <div class="kpi"><span class="kpi-num" data-count="829" data-suffix="K+">829<em>K+</em></span><span class="kpi-label">sales records modelled in Power BI</span></div>
+      <div class="kpi"><span class="kpi-num" data-count="86" data-suffix="%">86<em>%</em></span><span class="kpi-label">accuracy on a tuned churn model</span></div>
+      <div class="kpi"><span class="kpi-num" data-count="278">278</span><span class="kpi-label">countries charted, 1750 to 2021</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT SHEET -->
+<div class="strip" aria-label="Project screenshots">
+  <div class="strip-label wrap"><span class="mono">fig. 2 · contact sheet</span><span class="mono">21 projects · hover to pause, click to open</span></div>
+  <div class="strip-viewport">
+    <div class="strip-track">
+      <button type="button" class="shot" data-open="kaidis" style="--r:-1.2deg" aria-label="Open KAIDIS Coffee Shop"><img src="media/kaidis/cover.webp" alt="" loading="lazy" decoding="async" width="1200" height="750"><span class="shot-cap">KAIDIS Coffee Shop</span></button>
+      <button type="button" class="shot" data-open="toy" style="--r:0.8deg" aria-label="Open Toy Store KPI Report"><img src="media/toy/cover.webp" alt="" loading="lazy" decoding="async" width="1200" height="750"><span class="shot-cap">Toy Store KPI Report</span></button>
+      <button type="button" class="shot" data-open="burger" style="--r:-0.5deg" aria-label="Open Restaurant Burger House"><img src="media/burger/cover.webp" alt="" loading="lazy" decoding="async" width="1200" height="750"><span class="shot-cap">Restaurant Burger House</span></button>
+      <button type="button" class="shot" data-open="co2" style="--r:1.1deg" aria-label="Open Global CO₂ Emissions Dashboard"><img src="media/co2/cover.webp" alt="" loading="lazy" decoding="async" width="1200" height="750"><span class="shot-cap">Global CO₂ Emissions Dashboard</span></button>
+      <button type="button" class="shot" data-open="lusagi" style="--r:-0.9deg" aria-label="Open Lussagi Agency Website"><img src="media/lusagi/cover.webp" alt="" loading="lazy" decoding="async" width="1200" height="750"><span class="shot-cap">Lussagi Agency Website</span></button>
+      <button type="button" class="shot" data-open="churn" style="--r:0.4deg" aria-label="Open Bank Customer Churn Classification"><img src="media/churn/cover.webp" alt="" loading="lazy" decoding="async" width="1200" height="750"><span class="shot-cap">Bank Customer Churn Classification</span></button>
+      <button type="button" class="shot" data-open="squid" style="--r:-1.3deg" aria-label="Open Red Light, Green Light 3D Game"><img src="media/squid/cover.webp" alt="" loading="lazy" decoding="async" width="1200" height="750"><span class="shot-cap">Red Light, Green Light 3D Game</span></button>
+      <button type="button" class="shot" data-open="b2b" style="--r:0.9deg" aria-label="Open B2B Sales Pipeline CRM Dashboard"><img src="media/b2b/cover.webp" alt="" loading="lazy" decoding="async" width="1200" height="750"><span class="shot-cap">B2B Sales Pipeline CRM Dashboard</span></button>
+      <button type="button" class="shot" data-open="ecommerce" style="--r:-0.4deg" aria-label="Open E-commerce Landing Page"><img src="media/ecommerce/cover.webp" alt="" loading="lazy" decoding="async" width="1200" height="750"><span class="shot-cap">E-commerce Landing Page</span></button>
+      <button type="button" class="shot" data-open="hr" style="--r:1.2deg" aria-label="Open HR Analytics Dashboard"><img src="media/hr/cover.webp" alt="" loading="lazy" decoding="async" width="1200" height="750"><span class="shot-cap">HR Analytics Dashboard</span></button>
+      <button type="button" class="shot" data-open="weather" style="--r:-0.8deg" aria-label="Open Weather React App"><img src="media/weather/cover.webp" alt="" loading="lazy" decoding="async" width="1200" height="750"><span class="shot-cap">Weather React App</span></button>
+      <button type="button" class="shot" data-open="airbnb" style="--r:0.6deg" aria-label="Open Airbnb Listings Analysis"><img src="media/airbnb/cover.webp" alt="" loading="lazy" decoding="async" width="1200" height="750"><span class="shot-cap">Airbnb Listings Analysis</span></button>
+      <button type="button" class="shot" data-open="payroll" style="--r:-1.2deg" aria-label="Open Payroll Web App"><img src="media/payroll/cover.webp" alt="" loading="lazy" decoding="async" width="1200" height="750"><span class="shot-cap">Payroll Web App</span></button>
+      <button type="button" class="shot" data-open="retail" style="--r:0.8deg" aria-label="Open Retail Sales SQL Analysis"><img src="media/retail/cover.webp" alt="" loading="lazy" decoding="async" width="1200" height="750"><span class="shot-cap">Retail Sales SQL Analysis</span></button>
+      <button type="button" class="shot" data-open="clock" style="--r:-0.5deg" aria-label="Open Analog Clock"><img src="media/clock/cover.webp" alt="" loading="lazy" decoding="async" width="1200" height="750"><span class="shot-cap">Analog Clock</span></button>
+      <button type="button" class="shot" data-open="restaurant" style="--r:1.1deg" aria-label="Open Restaurant Order Analysis"><img src="media/restaurant/cover.webp" alt="" loading="lazy" decoding="async" width="1200" height="750"><span class="shot-cap">Restaurant Order Analysis</span></button>
+      <button type="button" class="shot" data-open="bmi" style="--r:-0.9deg" aria-label="Open BMI Calculator"><img src="media/bmi/cover.webp" alt="" loading="lazy" decoding="async" width="1200" height="750"><span class="shot-cap">BMI Calculator</span></button>
+      <button type="button" class="shot" data-open="todo" style="--r:0.4deg" aria-label="Open To-Do List"><img src="media/todo/cover.webp" alt="" loading="lazy" decoding="async" width="1200" height="750"><span class="shot-cap">To-Do List</span></button>
+      <button type="button" class="shot" data-open="weatherweb" style="--r:-1.3deg" aria-label="Open Weather Web App"><img src="media/weatherweb/cover.webp" alt="" loading="lazy" decoding="async" width="1200" height="750"><span class="shot-cap">Weather Web App</span></button>
+      <button type="button" class="shot" data-open="adventure" style="--r:0.9deg" aria-label="Open Choose Your Adventure"><img src="media/adventure/cover.webp" alt="" loading="lazy" decoding="async" width="1200" height="750"><span class="shot-cap">Choose Your Adventure</span></button>
+      <button type="button" class="shot" data-open="rps" style="--r:-0.4deg" aria-label="Open Rock Paper Scissors"><img src="media/rps/cover.webp" alt="" loading="lazy" decoding="async" width="1200" height="750"><span class="shot-cap">Rock Paper Scissors</span></button>
+      <button type="button" class="shot" data-open="kaidis" style="--r:-1.2deg" tabindex="-1" aria-hidden="true"><img src="media/kaidis/cover.webp" alt="" loading="lazy" decoding="async" width="1200" height="750"><span class="shot-cap">KAIDIS Coffee Shop</span></button>
+      <button type="button" class="shot" data-open="toy" style="--r:0.8deg" tabindex="-1" aria-hidden="true"><img src="media/toy/cover.webp" alt="" loading="lazy" decoding="async" width="1200" height="750"><span class="shot-cap">Toy Store KPI Report</span></button>
+      <button type="button" class="shot" data-open="burger" style="--r:-0.5deg" tabindex="-1" aria-hidden="true"><img src="media/burger/cover.webp" alt="" loading="lazy" decoding="async" width="1200" height="750"><span class="shot-cap">Restaurant Burger House</span></button>
+      <button type="button" class="shot" data-open="co2" style="--r:1.1deg" tabindex="-1" aria-hidden="true"><img src="media/co2/cover.webp" alt="" loading="lazy" decoding="async" width="1200" height="750"><span class="shot-cap">Global CO₂ Emissions Dashboard</span></button>
+      <button type="button" class="shot" data-open="lusagi" style="--r:-0.9deg" tabindex="-1" aria-hidden="true"><img src="media/lusagi/cover.webp" alt="" loading="lazy" decoding="async" width="1200" height="750"><span class="shot-cap">Lussagi Agency Website</span></button>
+      <button type="button" class="shot" data-open="churn" style="--r:0.4deg" tabindex="-1" aria-hidden="true"><img src="media/churn/cover.webp" alt="" loading="lazy" decoding="async" width="1200" height="750"><span class="shot-cap">Bank Customer Churn Classification</span></button>
+      <button type="button" class="shot" data-open="squid" style="--r:-1.3deg" tabindex="-1" aria-hidden="true"><img src="media/squid/cover.webp" alt="" loading="lazy" decoding="async" width="1200" height="750"><span class="shot-cap">Red Light, Green Light 3D Game</span></button>
+      <button type="button" class="shot" data-open="b2b" style="--r:0.9deg" tabindex="-1" aria-hidden="true"><img src="media/b2b/cover.webp" alt="" loading="lazy" decoding="async" width="1200" height="750"><span class="shot-cap">B2B Sales Pipeline CRM Dashboard</span></button>
+      <button type="button" class="shot" data-open="ecommerce" style="--r:-0.4deg" tabindex="-1" aria-hidden="true"><img src="media/ecommerce/cover.webp" alt="" loading="lazy" decoding="async" width="1200" height="750"><span class="shot-cap">E-commerce Landing Page</span></button>
+      <button type="button" class="shot" data-open="hr" style="--r:1.2deg" tabindex="-1" aria-hidden="true"><img src="media/hr/cover.webp" alt="" loading="lazy" decoding="async" width="1200" height="750"><span class="shot-cap">HR Analytics Dashboard</span></button>
+      <button type="button" class="shot" data-open="weather" style="--r:-0.8deg" tabindex="-1" aria-hidden="true"><img src="media/weather/cover.webp" alt="" loading="lazy" decoding="async" width="1200" height="750"><span class="shot-cap">Weather React App</span></button>
+      <button type="button" class="shot" data-open="airbnb" style="--r:0.6deg" tabindex="-1" aria-hidden="true"><img src="media/airbnb/cover.webp" alt="" loading="lazy" decoding="async" width="1200" height="750"><span class="shot-cap">Airbnb Listings Analysis</span></button>
+      <button type="button" class="shot" data-open="payroll" style="--r:-1.2deg" tabindex="-1" aria-hidden="true"><img src="media/payroll/cover.webp" alt="" loading="lazy" decoding="async" width="1200" height="750"><span class="shot-cap">Payroll Web App</span></button>
+      <button type="button" class="shot" data-open="retail" style="--r:0.8deg" tabindex="-1" aria-hidden="true"><img src="media/retail/cover.webp" alt="" loading="lazy" decoding="async" width="1200" height="750"><span class="shot-cap">Retail Sales SQL Analysis</span></button>
+      <button type="button" class="shot" data-open="clock" style="--r:-0.5deg" tabindex="-1" aria-hidden="true"><img src="media/clock/cover.webp" alt="" loading="lazy" decoding="async" width="1200" height="750"><span class="shot-cap">Analog Clock</span></button>
+      <button type="button" class="shot" data-open="restaurant" style="--r:1.1deg" tabindex="-1" aria-hidden="true"><img src="media/restaurant/cover.webp" alt="" loading="lazy" decoding="async" width="1200" height="750"><span class="shot-cap">Restaurant Order Analysis</span></button>
+      <button type="button" class="shot" data-open="bmi" style="--r:-0.9deg" tabindex="-1" aria-hidden="true"><img src="media/bmi/cover.webp" alt="" loading="lazy" decoding="async" width="1200" height="750"><span class="shot-cap">BMI Calculator</span></button>
+      <button type="button" class="shot" data-open="todo" style="--r:0.4deg" tabindex="-1" aria-hidden="true"><img src="media/todo/cover.webp" alt="" loading="lazy" decoding="async" width="1200" height="750"><span class="shot-cap">To-Do List</span></button>
+      <button type="button" class="shot" data-open="weatherweb" style="--r:-1.3deg" tabindex="-1" aria-hidden="true"><img src="media/weatherweb/cover.webp" alt="" loading="lazy" decoding="async" width="1200" height="750"><span class="shot-cap">Weather Web App</span></button>
+      <button type="button" class="shot" data-open="adventure" style="--r:0.9deg" tabindex="-1" aria-hidden="true"><img src="media/adventure/cover.webp" alt="" loading="lazy" decoding="async" width="1200" height="750"><span class="shot-cap">Choose Your Adventure</span></button>
+      <button type="button" class="shot" data-open="rps" style="--r:-0.4deg" tabindex="-1" aria-hidden="true"><img src="media/rps/cover.webp" alt="" loading="lazy" decoding="async" width="1200" height="750"><span class="shot-cap">Rock Paper Scissors</span></button>
+    </div>
+  </div>
+</div>
+
+<!-- WORK -->
+<section class="sec" id="work">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div>
+        <p class="sql"><span class="kw">SELECT</span> * <span class="kw">FROM</span> projects <span class="kw">ORDER BY</span> impact <span class="kw">DESC</span>;</p>
+        <h2 class="sec-title">Selected work</h2>
+        <p class="sec-sub" style="margin-top:14px">Each project plays a short reel built from the screenshots and charts in its repository. Open any card for the full set.</p>
+      </div>
+      <div class="filters" role="group" aria-label="Filter projects">
+        <button type="button" data-filter="all" aria-pressed="true">All <span class="n">10</span></button>
+        <button type="button" data-filter="data" aria-pressed="false">Data &amp; BI <span class="n">6</span></button>
+        <button type="button" data-filter="web" aria-pressed="false">Web <span class="n">4</span></button>
+      </div>
+    </div>
+
+    <div class="cards" id="cards">
+      <article class="card" data-cat="data" data-slug="churn">
+        <button type="button" class="media" data-open="churn" data-video="media/churn/video.mp4" aria-label="Open media for Bank Customer Churn Classification"><img src="media/churn/cover.webp" alt="" loading="lazy" decoding="async" width="1200" height="750"><span class="m-badge"><i class="dot"></i>Project reel</span><span class="m-open">Watch · 3 images<svg viewBox="0 0 16 16" aria-hidden="true"><path d="M9 2h5v5M14 2 8.5 7.5M7 14H2V9M2 14l5.5-5.5" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></span><span class="m-prog"></span></button>
+        <div class="card-body">
+          <div class="card-meta"><span>Machine learning</span><span>Python</span></div>
+          <h3>Bank Customer Churn Classification</h3>
+          <p>Predicts which bank customers are likely to leave. Compares Logistic Regression with Random Forest, then tunes the decision threshold using ROC analysis.</p>
+          <div class="card-kpi"><strong>86%</strong><span>tuned model accuracy across 10,000 customer records</span></div>
+          <ul class="stack"><li>Python</li><li>pandas</li><li>scikit-learn</li></ul>
+          <div class="card-links"><a class="card-link stretch" href="https://github.com/Scarface96/Bank-Customer-Churn-Classification" target="_blank" rel="noopener">View repository <span class="arr">↗</span></a></div>
+        </div>
+      </article>
+
+      <article class="card" data-cat="data" data-slug="toy">
+        <button type="button" class="media" data-open="toy" data-video="media/toy/video.mp4" aria-label="Open media for Toy Store KPI Report"><img src="media/toy/cover.webp" alt="" loading="lazy" decoding="async" width="1200" height="750"><span class="m-badge"><i class="dot"></i>Project reel</span><span class="m-open">Watch · 2 images<svg viewBox="0 0 16 16" aria-hidden="true"><path d="M9 2h5v5M14 2 8.5 7.5M7 14H2V9M2 14l5.5-5.5" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></span><span class="m-prog"></span></button>
+        <div class="card-body">
+          <div class="card-meta"><span>Business intelligence</span><span>Power BI</span></div>
+          <h3>Toy Store KPI Report</h3>
+          <p>Retail performance dashboard for a multi-store toy business, built on a star-schema model with DAX measures for revenue, profit and drill-down analysis.</p>
+          <div class="card-kpi"><strong>829K+</strong><span>sales records in the model</span></div>
+          <ul class="stack"><li>Power BI</li><li>DAX</li><li>Data modelling</li></ul>
+          <div class="card-links"><a class="card-link stretch" href="https://github.com/Scarface96/Toy-Store-KPI-Report" target="_blank" rel="noopener">View repository <span class="arr">↗</span></a></div>
+        </div>
+      </article>
+
+      <article class="card" data-cat="data" data-slug="b2b">
+        <button type="button" class="media" data-open="b2b" data-video="media/b2b/video.mp4" aria-label="Open media for B2B Sales Pipeline CRM Dashboard"><img src="media/b2b/cover.webp" alt="" loading="lazy" decoding="async" width="1200" height="750"><span class="m-badge"><i class="dot"></i>Project reel</span><span class="m-open">Watch · 2 images<svg viewBox="0 0 16 16" aria-hidden="true"><path d="M9 2h5v5M14 2 8.5 7.5M7 14H2V9M2 14l5.5-5.5" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></span><span class="m-prog"></span></button>
+        <div class="card-body">
+          <div class="card-meta"><span>Sales analytics</span><span>Excel</span></div>
+          <h3>B2B Sales Pipeline CRM Dashboard</h3>
+          <p>Interactive dashboard tracking the quarterly pipeline and agent performance, with manager and region slicers and stage-by-stage reporting.</p>
+          <div class="card-kpi"><strong>8,800</strong><span>sales opportunities tracked</span></div>
+          <ul class="stack"><li>Excel</li><li>PivotTables</li><li>CRM analytics</li></ul>
+          <div class="card-links"><a class="card-link stretch" href="https://github.com/Scarface96/B2B-Sales-Pipeline-CRM-Dashboard-for-TechSolutions-Inc." target="_blank" rel="noopener">View repository <span class="arr">↗</span></a></div>
+        </div>
+      </article>
+
+      <article class="card" data-cat="data" data-slug="co2">
+        <button type="button" class="media" data-open="co2" data-video="media/co2/video.mp4" aria-label="Open media for Global CO₂ Emissions Dashboard"><img src="media/co2/cover.webp" alt="" loading="lazy" decoding="async" width="1200" height="750"><span class="m-badge"><i class="dot"></i>Project reel</span><span class="m-open">Watch · 3 images<svg viewBox="0 0 16 16" aria-hidden="true"><path d="M9 2h5v5M14 2 8.5 7.5M7 14H2V9M2 14l5.5-5.5" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></span><span class="m-prog"></span></button>
+        <div class="card-body">
+          <div class="card-meta"><span>Data visualisation</span><span>Tableau</span></div>
+          <h3>Global CO₂ Emissions Dashboard</h3>
+          <p>Long-run analysis of global emissions using maps, trend lines and comparative views, written as a sustainability story.</p>
+          <div class="card-kpi"><strong>278</strong><span>countries, with history from 1750 to 2021</span></div>
+          <ul class="stack"><li>Tableau</li><li>Data visualisation</li></ul>
+          <div class="card-links"><a class="card-link stretch" href="https://github.com/Scarface96/Global-CO2-Emissions-Dashboard" target="_blank" rel="noopener">View repository <span class="arr">↗</span></a></div>
+        </div>
+      </article>
+
+      <article class="card" data-cat="data" data-slug="hr">
+        <button type="button" class="media" data-open="hr" data-video="media/hr/video.mp4" aria-label="Open media for HR Analytics Dashboard"><img src="media/hr/cover.webp" alt="" loading="lazy" decoding="async" width="1200" height="750"><span class="m-badge"><i class="dot"></i>Project reel</span><span class="m-open">Watch · 3 images<svg viewBox="0 0 16 16" aria-hidden="true"><path d="M9 2h5v5M14 2 8.5 7.5M7 14H2V9M2 14l5.5-5.5" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></span><span class="m-prog"></span></button>
+        <div class="card-body">
+          <div class="card-meta"><span>People analytics</span><span>Tableau</span></div>
+          <h3>HR Analytics Dashboard</h3>
+          <p>Workforce dashboard on employee attrition, with department and age analysis plus gender and education breakdowns.</p>
+          <div class="card-kpi"><strong>1,470</strong><span>employee records analysed</span></div>
+          <ul class="stack"><li>Tableau</li><li>HR analytics</li></ul>
+          <div class="card-links"><a class="card-link stretch" href="https://github.com/Scarface96/HR-Analysis-Dashboard" target="_blank" rel="noopener">View repository <span class="arr">↗</span></a></div>
+        </div>
+      </article>
+
+      <article class="card" data-cat="data" data-slug="retail">
+        <button type="button" class="media" data-open="retail" data-video="media/retail/video.mp4" aria-label="Open media for Retail Sales SQL Analysis"><img src="media/retail/cover.webp" alt="" loading="lazy" decoding="async" width="1200" height="750"><span class="m-badge"><i class="dot"></i>Project reel</span><span class="m-open">Watch · 2 images<svg viewBox="0 0 16 16" aria-hidden="true"><path d="M9 2h5v5M14 2 8.5 7.5M7 14H2V9M2 14l5.5-5.5" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></span><span class="m-prog"></span></button>
+        <div class="card-body">
+          <div class="card-meta"><span>SQL analysis</span><span>PostgreSQL</span></div>
+          <h3>Retail Sales SQL Analysis</h3>
+          <p>Database setup and validation, data cleaning and exploratory analysis, then business KPI queries on category and customer behaviour.</p>
+          <div class="card-kpi"><strong>CTEs</strong><span>and window functions for customer and category insight</span></div>
+          <ul class="stack"><li>PostgreSQL</li><li>SQL</li><li>EDA</li></ul>
+          <div class="card-links"><a class="card-link stretch" href="https://github.com/Scarface96/sql_retail_sales_p1" target="_blank" rel="noopener">View repository <span class="arr">↗</span></a></div>
+        </div>
+      </article>
+
+      <article class="card" data-cat="web" data-slug="netflix">
+        <button type="button" class="media" data-open="netflix" aria-label="Open media for Netflix Clone"><img src="media/netflix/cover.webp" alt="" loading="lazy" decoding="async" width="1200" height="750"><span class="m-badge"><i class="dot wip"></i>Code preview</span><span class="m-open">View details<svg viewBox="0 0 16 16" aria-hidden="true"><path d="M9 2h5v5M14 2 8.5 7.5M7 14H2V9M2 14l5.5-5.5" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></span><span class="m-prog"></span></button>
+        <div class="card-body">
+          <div class="card-meta"><span>Web app</span><span>React</span></div>
+          <h3>Netflix Clone</h3>
+          <p>A streaming-style React app with Firebase sign-in, live catalogue data from the TMDB API, and saved shows per user.</p>
+          <ul class="stack"><li>React</li><li>Tailwind CSS</li><li>Firebase</li><li>TMDB API</li></ul>
+          <div class="card-links"><a class="card-link stretch" href="https://github.com/Scarface96/netflix-clone" target="_blank" rel="noopener">View repository <span class="arr">↗</span></a></div>
+        </div>
+      </article>
+
+      <article class="card" data-cat="web" data-slug="kaidis">
+        <button type="button" class="media" data-open="kaidis" data-video="media/kaidis/video.mp4" aria-label="Open media for KAIDIS Coffee Shop"><img src="media/kaidis/cover.webp" alt="" loading="lazy" decoding="async" width="1200" height="750"><span class="m-badge"><i class="dot"></i>Project reel</span><span class="m-open">Watch · 5 images<svg viewBox="0 0 16 16" aria-hidden="true"><path d="M9 2h5v5M14 2 8.5 7.5M7 14H2V9M2 14l5.5-5.5" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></span><span class="m-prog"></span></button>
+        <div class="card-body">
+          <div class="card-meta"><span>Client website</span><span>HTML · CSS · JS</span></div>
+          <h3>KAIDIS Coffee Shop</h3>
+          <p>A responsive café website designed as a modern, client-ready landing page for a local business.</p>
+          <ul class="stack"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+          <div class="card-links"><a class="card-link stretch" href="https://github.com/Scarface96/KAIDIS--Coffee-Shop" target="_blank" rel="noopener">Repository <span class="arr">↗</span></a><a class="card-link live" href="https://scarface96.github.io/KAIDIS--Coffee-Shop/" target="_blank" rel="noopener">Live demo <span class="arr">↗</span></a></div>
+        </div>
+      </article>
+
+      <article class="card" data-cat="web" data-slug="movie">
+        <button type="button" class="media" data-open="movie" aria-label="Open media for Movie Search App"><img src="media/movie/cover.webp" alt="" loading="lazy" decoding="async" width="1200" height="750"><span class="m-badge"><i class="dot wip"></i>Code preview</span><span class="m-open">View details<svg viewBox="0 0 16 16" aria-hidden="true"><path d="M9 2h5v5M14 2 8.5 7.5M7 14H2V9M2 14l5.5-5.5" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></span><span class="m-prog"></span></button>
+        <div class="card-body">
+          <div class="card-meta"><span>Web app</span><span>React</span></div>
+          <h3>Movie Search App</h3>
+          <p>A React search interface for films, powered by the OMDb REST API and styled with styled-components.</p>
+          <ul class="stack"><li>React</li><li>Axios</li><li>styled-components</li><li>REST API</li></ul>
+          <div class="card-links"><a class="card-link stretch" href="https://github.com/Scarface96/movie-app" target="_blank" rel="noopener">View repository <span class="arr">↗</span></a></div>
+        </div>
+      </article>
+
+      <article class="card" data-cat="web" data-slug="weather">
+        <button type="button" class="media" data-open="weather" data-video="media/weather/video.mp4" aria-label="Open media for Weather React App"><img src="media/weather/cover.webp" alt="" loading="lazy" decoding="async" width="1200" height="750"><span class="m-badge"><i class="dot"></i>Project reel</span><span class="m-open">Watch · 2 images<svg viewBox="0 0 16 16" aria-hidden="true"><path d="M9 2h5v5M14 2 8.5 7.5M7 14H2V9M2 14l5.5-5.5" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></span><span class="m-prog"></span></button>
+        <div class="card-body">
+          <div class="card-meta"><span>Web app</span><span>React</span></div>
+          <h3>Weather React App</h3>
+          <p>Search any city and get its current conditions, using live data from the OpenWeatherMap API.</p>
+          <ul class="stack"><li>React</li><li>OpenWeatherMap</li><li>Axios</li></ul>
+          <div class="card-links"><a class="card-link stretch" href="https://github.com/Scarface96/weather-react-app" target="_blank" rel="noopener">View repository <span class="arr">↗</span></a></div>
+        </div>
+      </article>
+    </div>
+
+    <div class="archive reveal">
+      <div class="archive-head">
+        <h3>More from the archive</h3>
+        <span class="sql" style="margin:0"><span class="kw">SELECT</span> name <span class="kw">FROM</span> repos <span class="kw">WHERE</span> featured = false;</span>
+      </div>
+      <div class="qtable">
+        <div class="qhead"><span>Analysis</span><span>type</span></div>
+        <a href="https://github.com/Scarface96/AirBnB-Listing-Analysis-Review" target="_blank" rel="noopener" data-open="airbnb" data-cover="media/airbnb/cover.webp" data-video="media/airbnb/video.mp4"><span class="th"><img src="media/airbnb/cover.webp" alt="" loading="lazy" width="96" height="60"></span><span class="nm">Airbnb Listings Analysis</span><span class="ty">EDA</span><span class="go">↗</span></a>
+        <a href="https://github.com/Scarface96/Restaurant-Order-Analysis" target="_blank" rel="noopener" data-open="restaurant" data-cover="media/restaurant/cover.webp" data-video="media/restaurant/video.mp4"><span class="th"><img src="media/restaurant/cover.webp" alt="" loading="lazy" width="96" height="60"></span><span class="nm">Restaurant Order Analysis</span><span class="ty">SQL</span><span class="go">↗</span></a>
+        <a href="https://github.com/Scarface96/covid-project" target="_blank" rel="noopener" data-open="covid" data-cover="media/covid/cover.webp"><span class="th"><img src="media/covid/cover.webp" alt="" loading="lazy" width="96" height="60"></span><span class="nm">COVID-19 Data Exploration</span><span class="ty">SQL</span><span class="go">↗</span></a>
+        <a href="https://github.com/Scarface96/Customer_purchase_behaviour" target="_blank" rel="noopener" data-open="customer" data-cover="media/customer/cover.webp"><span class="th"><img src="media/customer/cover.webp" alt="" loading="lazy" width="96" height="60"></span><span class="nm">Customer Purchase Behaviour</span><span class="ty">analysis</span><span class="go">↗</span></a>
+        <p class="rows">(4 rows)</p>
+      </div>
+      <div class="qtable">
+        <div class="qhead"><span>Web &amp; Python</span><span>type</span></div>
+        <a href="https://github.com/Scarface96/e-commerce-landing-page" target="_blank" rel="noopener" data-open="ecommerce" data-cover="media/ecommerce/cover.webp" data-video="media/ecommerce/video.mp4"><span class="th"><img src="media/ecommerce/cover.webp" alt="" loading="lazy" width="96" height="60"></span><span class="nm">E-commerce Landing Page</span><span class="ty">web</span><span class="go">↗</span></a>
+        <a href="https://github.com/Scarface96/payroll-web-app" target="_blank" rel="noopener" data-open="payroll" data-cover="media/payroll/cover.webp" data-video="media/payroll/video.mp4"><span class="th"><img src="media/payroll/cover.webp" alt="" loading="lazy" width="96" height="60"></span><span class="nm">Payroll Web App</span><span class="ty">web app</span><span class="go">↗</span></a>
+        <a href="https://github.com/Scarface96/TO-DO-LIST-MAIN" target="_blank" rel="noopener" data-open="todo" data-cover="media/todo/cover.webp" data-video="media/todo/video.mp4"><span class="th"><img src="media/todo/cover.webp" alt="" loading="lazy" width="96" height="60"></span><span class="nm">To-Do List</span><span class="ty">web app</span><span class="go">↗</span></a>
+        <a href="https://github.com/Scarface96/weather-web-app" target="_blank" rel="noopener" data-open="weatherweb" data-cover="media/weatherweb/cover.webp" data-video="media/weatherweb/video.mp4"><span class="th"><img src="media/weatherweb/cover.webp" alt="" loading="lazy" width="96" height="60"></span><span class="nm">Weather Web App</span><span class="ty">web app</span><span class="go">↗</span></a>
+        <a href="https://github.com/Scarface96/Restaurant-burger-house" target="_blank" rel="noopener" data-open="burger" data-cover="media/burger/cover.webp" data-video="media/burger/video.mp4"><span class="th"><img src="media/burger/cover.webp" alt="" loading="lazy" width="96" height="60"></span><span class="nm">Restaurant Burger House</span><span class="ty">web</span><span class="go">↗</span></a>
+        <a href="https://github.com/Scarface96/Lusagi-website" target="_blank" rel="noopener" data-open="lusagi" data-cover="media/lusagi/cover.webp" data-video="media/lusagi/video.mp4"><span class="th"><img src="media/lusagi/cover.webp" alt="" loading="lazy" width="96" height="60"></span><span class="nm">Lussagi Agency Website</span><span class="ty">web</span><span class="go">↗</span></a>
+        <a href="https://github.com/Scarface96/bmi-calculator" target="_blank" rel="noopener" data-open="bmi" data-cover="media/bmi/cover.webp" data-video="media/bmi/video.mp4"><span class="th"><img src="media/bmi/cover.webp" alt="" loading="lazy" width="96" height="60"></span><span class="nm">BMI Calculator</span><span class="ty">tool</span><span class="go">↗</span></a>
+        <a href="https://github.com/Scarface96/clock-app" target="_blank" rel="noopener" data-open="clock" data-cover="media/clock/cover.webp" data-video="media/clock/video.mp4"><span class="th"><img src="media/clock/cover.webp" alt="" loading="lazy" width="96" height="60"></span><span class="nm">Analog Clock</span><span class="ty">tool</span><span class="go">↗</span></a>
+        <a href="https://github.com/Scarface96/squid-game" target="_blank" rel="noopener" data-open="squid" data-cover="media/squid/cover.webp" data-video="media/squid/video.mp4"><span class="th"><img src="media/squid/cover.webp" alt="" loading="lazy" width="96" height="60"></span><span class="nm">Red Light, Green Light 3D Game</span><span class="ty">game</span><span class="go">↗</span></a>
+        <a href="https://github.com/Scarface96/choose-adventure" target="_blank" rel="noopener" data-open="adventure" data-cover="media/adventure/cover.webp" data-video="media/adventure/video.mp4"><span class="th"><img src="media/adventure/cover.webp" alt="" loading="lazy" width="96" height="60"></span><span class="nm">Choose Your Adventure</span><span class="ty">Python</span><span class="go">↗</span></a>
+        <a href="https://github.com/Scarface96/rock-paper-scissors" target="_blank" rel="noopener" data-open="rps" data-cover="media/rps/cover.webp" data-video="media/rps/video.mp4"><span class="th"><img src="media/rps/cover.webp" alt="" loading="lazy" width="96" height="60"></span><span class="nm">Rock Paper Scissors</span><span class="ty">game</span><span class="go">↗</span></a>
+        <p class="rows">(11 rows)</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="sec" id="about" style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div>
+        <p class="sql"><span class="kw">SELECT</span> profile <span class="kw">FROM</span> people <span class="kw">WHERE</span> name = 'Tony Mulunda';</p>
+        <h2 class="sec-title">About</h2>
+      </div>
+    </div>
+    <div class="about-grid">
+      <div class="reveal">
+        <div class="portrait">
+          <span class="mono-mark" aria-hidden="true">TM</span>
+          <img id="avatar" src="https://avatars.githubusercontent.com/u/89808068?v=4&amp;s=640" alt="Portrait of Tony Mulunda" loading="lazy">
+        </div>
+        <div class="portrait-cap"><span>Tony Mulunda</span><span>@Scarface96</span></div>
+      </div>
+      <div class="reveal">
+        <p class="bio">I'm a <strong>data-focused problem solver</strong> and front-end developer. I enjoy turning raw information into <strong>clear business insight</strong>, and building interfaces people can actually use.</p>
+        <p class="bio-2">My work runs from SQL and Python analysis, through Power BI and Tableau dashboards and scikit-learn models, to responsive web apps in React and Firebase. I'm strengthening my portfolio for Data Analyst, BI Analyst and Junior Data Engineering roles, and I take on freelance analytics, dashboard and web projects.</p>
+        <div class="caps">
+          <div class="cap">
+            <h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><ellipse cx="12" cy="5.5" rx="7.5" ry="2.8"/><path d="M4.5 5.5v6c0 1.5 3.4 2.8 7.5 2.8s7.5-1.3 7.5-2.8v-6M4.5 11.5v6c0 1.5 3.4 2.8 7.5 2.8s7.5-1.3 7.5-2.8v-6"/></svg>Analyse</h3>
+            <p>Clean, explore and query data with Python, SQL and Excel, and turn open questions into measurable KPIs.</p>
+          </div>
+          <div class="cap">
+            <h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg>Visualise</h3>
+            <p>Dashboards and reports in Power BI and Tableau, built on star-schema models and DAX measures.</p>
+          </div>
+          <div class="cap">
+            <h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M3 20c4-1 6-6 9-10s6-6 9-7"/><circle cx="7" cy="16" r="1.2"/><circle cx="12" cy="9" r="1.2"/><circle cx="17" cy="7" r="1.2"/><circle cx="9" cy="17" r="1.2"/></svg>Predict</h3>
+            <p>Classification models in scikit-learn, tuned with ROC analysis and translated into business recommendations.</p>
+          </div>
+          <div class="cap">
+            <h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5M13.5 4l-3 16"/></svg>Build</h3>
+            <p>Responsive front ends in HTML, CSS, JavaScript and React, with Firebase auth and REST APIs.</p>
+          </div>
+        </div>
+        <div class="open-to"><span class="mono">open_to =</span><span class="chip">Data Analyst</span><span class="chip">BI Analyst</span><span class="chip">Junior Data Engineer</span><span class="chip">Freelance dashboards</span><span class="chip">Freelance web builds</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TOOLKIT -->
+<section class="sec graph" id="toolkit">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div>
+        <p class="sql"><span class="kw">--</span> the toolkit, modelled the way I'd model your data</p>
+        <h2 class="sec-title">Toolkit</h2>
+      </div>
+      <p class="sec-sub">One fact table, six dimensions. Hover a table to trace its relationship.</p>
+    </div>
+    <div class="schema" id="schema">
+      <svg class="links" id="links" aria-hidden="true"></svg>
+      <div class="tbl fact" data-id="f">
+        <div class="tbl-h"><span>fact_tony</span><span class="k">FACT</span></div>
+        <ul>
+          <li><span>analysis_key</span><span class="t">FK</span></li>
+          <li><span>bi_key</span><span class="t">FK</span></li>
+          <li><span>ml_key</span><span class="t">FK</span></li>
+          <li><span>workflow_key</span><span class="t">FK</span></li>
+          <li><span>web_key</span><span class="t">FK</span></li>
+          <li><span>platform_key</span><span class="t">FK</span></li>
+          <li class="measure"><span>public_repos</span><span class="t" style="color:inherit">29</span></li>
+        </ul>
+      </div>
+      <div class="tbl" data-id="a" style="grid-area:a">
+        <div class="tbl-h"><span>dim_analysis</span><span class="k">6 rows</span></div>
+        <ul><li><span>Python</span><span class="t">lang</span></li><li><span>pandas</span><span class="t">lib</span></li><li><span>SQL</span><span class="t">lang</span></li><li><span>PostgreSQL</span><span class="t">db</span></li><li><span>MySQL</span><span class="t">db</span></li><li><span>Excel</span><span class="t">tool</span></li></ul>
+      </div>
+      <div class="tbl" data-id="b" style="grid-area:b">
+        <div class="tbl-h"><span>dim_bi</span><span class="k">5 rows</span></div>
+        <ul><li><span>Power BI</span><span class="t">tool</span></li><li><span>DAX</span><span class="t">lang</span></li><li><span>Tableau</span><span class="t">tool</span></li><li><span>Star-schema modelling</span><span class="t">method</span></li><li><span>PivotTables</span><span class="t">tool</span></li></ul>
+      </div>
+      <div class="tbl" data-id="c" style="grid-area:c">
+        <div class="tbl-h"><span>dim_ml</span><span class="k">4 rows</span></div>
+        <ul><li><span>scikit-learn</span><span class="t">lib</span></li><li><span>Logistic Regression</span><span class="t">model</span></li><li><span>Random Forest</span><span class="t">model</span></li><li><span>ROC &amp; threshold tuning</span><span class="t">method</span></li></ul>
+      </div>
+      <div class="tbl" data-id="d" style="grid-area:d">
+        <div class="tbl-h"><span>dim_workflow</span><span class="k">4 rows</span></div>
+        <ul><li><span>Data cleaning</span><span class="t">step</span></li><li><span>Exploratory analysis</span><span class="t">step</span></li><li><span>ETL-style workflows</span><span class="t">step</span></li><li><span>Reporting automation</span><span class="t">step</span></li></ul>
+      </div>
+      <div class="tbl" data-id="e" style="grid-area:e">
+        <div class="tbl-h"><span>dim_web</span><span class="k">5 rows</span></div>
+        <ul><li><span>HTML</span><span class="t">lang</span></li><li><span>CSS</span><span class="t">lang</span></li><li><span>JavaScript</span><span class="t">lang</span></li><li><span>React</span><span class="t">lib</span></li><li><span>Tailwind CSS</span><span class="t">lib</span></li></ul>
+      </div>
+      <div class="tbl" data-id="g" style="grid-area:g">
+        <div class="tbl-h"><span>dim_platform</span><span class="k">5 rows</span></div>
+        <ul><li><span>Firebase</span><span class="t">backend</span></li><li><span>REST APIs</span><span class="t">integration</span></li><li><span>Axios</span><span class="t">lib</span></li><li><span>Git</span><span class="t">tool</span></li><li><span>GitHub</span><span class="t">tool</span></li></ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="sec" id="contact" style="padding-top:clamp(24px,4vw,48px)">
+  <div class="wrap">
+    <div class="contact reveal">
+      <p class="sql"><span class="kw">INSERT INTO</span> conversations <span class="kw">VALUES</span> ('you', 'tony');</p>
+      <h2 class="contact-title">Let's build something <span>useful.</span></h2>
+      <p class="contact-sub">Hiring, collaborating, or need someone who can combine data, analytics and development? Send a note and tell me what you're working on.</p>
+      <div class="contact-row">
+        <div class="c-item">
+          <span class="lab">Email</span>
+          <span class="val" id="emailText">tonymulunda7@gmail.com</span>
+          <div class="c-actions">
+            <button class="c-btn" id="copyBtn" type="button">Copy address</button>
+            <a class="c-btn" href="mailto:tonymulunda7@gmail.com">Open email app</a>
+          </div>
+        </div>
+        <a class="c-item" href="https://www.linkedin.com/in/tony-mulunda/" target="_blank" rel="noopener"><span class="lab">LinkedIn</span><span class="val">in/tony-mulunda <span class="arr">↗</span></span></a>
+        <a class="c-item" href="https://github.com/Scarface96" target="_blank" rel="noopener"><span class="lab">GitHub</span><span class="val">@Scarface96 <span class="arr">↗</span></span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap foot">
+    <span>© <span id="yr">2026</span> Tony Mulunda. Data analyst, BI and front-end developer.</span>
+    <a href="#top">Back to top ↑</a>
+  </div>
+</footer>
+
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-labelledby="lbTitle" hidden>
+  <div class="lb-scrim" data-close></div>
+  <div class="lb-panel" id="lbPanel">
+    <div class="lb-head">
+      <div><p class="lb-kick" id="lbKick"></p><h3 id="lbTitle"></h3></div>
+      <div class="lb-nav">
+        <button class="lb-btn" id="lbPrevP" type="button" aria-label="Previous project">←</button>
+        <span class="mono" id="lbPos"></span>
+        <button class="lb-btn" id="lbNextP" type="button" aria-label="Next project">→</button>
+        <button class="lb-btn" type="button" data-close aria-label="Close">✕</button>
+      </div>
+    </div>
+    <div class="lb-stage" id="lbStage">
+      <button class="lb-arrow l" id="lbPrevM" type="button" aria-label="Previous image">‹</button>
+      <button class="lb-arrow r" id="lbNextM" type="button" aria-label="Next image">›</button>
+    </div>
+    <div class="lb-cap"><span id="lbCap"></span><span class="mono" id="lbCount"></span></div>
+    <div class="lb-thumbs" id="lbThumbs" role="list"></div>
+    <div class="lb-foot"><p id="lbDesc"></p><div class="lb-links" id="lbLinks"></div><ul class="stack" id="lbStack"></ul></div>
+  </div>
+</div>
+<div class="peek" id="peek" aria-hidden="true"><img alt="" id="peekImg"></div>
+
+<script src="js/projects.js"></script>
+<script src="js/script.js"></script>
+
+</body>
+</html>
