@@ -220,7 +220,14 @@ def app_shots(browser, slug, url, steps):
         page.on("pageerror", lambda e: print("   page error:", str(e)[:200]))
         page.goto(url)
         settle(page, 1500)
-        fn(page)
+        try:
+            fn(page)
+        except Exception as e:
+            print(f"   step '{cap}' failed: {e}".splitlines()[0], flush=True)
+            print("   page text:", page.inner_text("body")[:300].replace("\n", " | "), flush=True)
+            page.screenshot(path=str(ROOT / "tools" / f"debug-{slug}-{n}.png"))
+            ctx.close()
+            raise
         settle(page, 1500)
         png = tmp / f"{slug}-{n}.png"
         page.screenshot(path=str(png))
