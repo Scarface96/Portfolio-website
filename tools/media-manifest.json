@@ -1,0 +1,302 @@
+{
+  "churn": {
+    "slug": "churn",
+    "cover": "media/churn/cover.webp",
+    "gallery": [
+      {
+        "src": "media/churn/01.webp",
+        "w": 1032,
+        "h": 813,
+        "cap": "Four models compared on held-out customers"
+      },
+      {
+        "src": "media/churn/02.webp",
+        "w": 1032,
+        "h": 455,
+        "cap": "In-browser churn-risk calculator"
+      },
+      {
+        "src": "media/churn/03.webp",
+        "w": 1032,
+        "h": 870,
+        "cap": "Retention budget planner"
+      }
+    ],
+    "video": "media/churn/video.mp4"
+  },
+  "toy": {
+    "slug": "toy",
+    "cover": "media/toy/cover.webp",
+    "gallery": [
+      {
+        "src": "media/toy/01.webp",
+        "w": 1032,
+        "h": 739,
+        "cap": "Product portfolio map: units, margin and profit"
+      },
+      {
+        "src": "media/toy/02.webp",
+        "w": 1032,
+        "h": 704,
+        "cap": "Average daily revenue by weekday and month"
+      },
+      {
+        "src": "media/toy/03.webp",
+        "w": 1032,
+        "h": 826,
+        "cap": "Backtested Q4 2023 forecast"
+      }
+    ],
+    "video": "media/toy/video.mp4"
+  },
+  "b2b": {
+    "slug": "b2b",
+    "cover": "media/b2b/cover.webp",
+    "gallery": [
+      {
+        "src": "media/b2b/01.webp",
+        "w": 1032,
+        "h": 989,
+        "cap": "Agent win rates with 95% confidence ranges"
+      },
+      {
+        "src": "media/b2b/02.webp",
+        "w": 1032,
+        "h": 771,
+        "cap": "Open deals vs how long winning deals take"
+      },
+      {
+        "src": "media/b2b/03.webp",
+        "w": 1032,
+        "h": 939,
+        "cap": "Filterable team leaderboard"
+      }
+    ],
+    "video": "media/b2b/video.mp4"
+  },
+  "co2": {
+    "slug": "co2",
+    "cover": "media/co2/cover.webp",
+    "gallery": [
+      {
+        "src": "media/co2/01.webp",
+        "w": 1032,
+        "h": 801,
+        "cap": "Animated map of CO₂ per person"
+      },
+      {
+        "src": "media/co2/02.webp",
+        "w": 1032,
+        "h": 711,
+        "cap": "Historical responsibility vs population"
+      },
+      {
+        "src": "media/co2/03.webp",
+        "w": 1032,
+        "h": 1000,
+        "cap": "Country explorer"
+      }
+    ],
+    "video": "media/co2/video.mp4"
+  },
+  "hr": {
+    "slug": "hr",
+    "cover": "media/hr/cover.webp",
+    "gallery": [
+      {
+        "src": "media/hr/01.webp",
+        "w": 1032,
+        "h": 691,
+        "cap": "Overtime and seniority"
+      },
+      {
+        "src": "media/hr/02.webp",
+        "w": 1032,
+        "h": 1000,
+        "cap": "Attrition drivers as odds ratios"
+      },
+      {
+        "src": "media/hr/03.webp",
+        "w": 1032,
+        "h": 718,
+        "cap": "Segment explorer"
+      }
+    ],
+    "video": "media/hr/video.mp4"
+  },
+  "retail": {
+    "slug": "retail",
+    "cover": "media/retail/cover.webp",
+    "gallery": [
+      {
+        "src": "media/retail/01.webp",
+        "w": 1032,
+        "h": 1000,
+        "cap": "The SQL questions beside their live results"
+      },
+      {
+        "src": "media/retail/02.webp",
+        "w": 1032,
+        "h": 734,
+        "cap": "RFM customer segments"
+      },
+      {
+        "src": "media/retail/03.webp",
+        "w": 1032,
+        "h": 823,
+        "cap": "Live SQL editor running DuckDB in the browser"
+      }
+    ],
+    "video": "media/retail/video.mp4"
+  },
+  "restaurant": {
+    "slug": "restaurant",
+    "cover": "media/restaurant/cover.webp",
+    "gallery": [
+      {
+        "src": "media/restaurant/01.webp",
+        "w": 1032,
+        "h": 624,
+        "cap": "Busy hours by weekday"
+      },
+      {
+        "src": "media/restaurant/02.webp",
+        "w": 1032,
+        "h": 936,
+        "cap": "Menu engineering: Stars, Plowhorses, Puzzles and Dogs"
+      },
+      {
+        "src": "media/restaurant/03.webp",
+        "w": 1032,
+        "h": 640,
+        "cap": "What goes with each dish"
+      }
+    ],
+    "video": "media/restaurant/video.mp4"
+  },
+  "covid": {
+    "slug": "covid",
+    "cover": "media/covid/cover.webp",
+    "gallery": [
+      {
+        "src": "media/covid/01.webp",
+        "w": 1032,
+        "h": 982,
+        "cap": "South Africa's four waves"
+      },
+      {
+        "src": "media/covid/02.webp",
+        "w": 1032,
+        "h": 895,
+        "cap": "Excess deaths vs reported COVID deaths"
+      },
+      {
+        "src": "media/covid/03.webp",
+        "w": 1032,
+        "h": 704,
+        "cap": "Vaccination by continent"
+      }
+    ],
+    "video": "media/covid/video.mp4"
+  },
+  "weather": {
+    "slug": "weather",
+    "cover": "media/weather/cover.webp",
+    "gallery": [
+      {
+        "src": "media/weather/01.webp",
+        "w": 1200,
+        "h": 750,
+        "cap": "City search with suggestions"
+      },
+      {
+        "src": "media/weather/02.webp",
+        "w": 1200,
+        "h": 750,
+        "cap": "Forecast for Tokyo"
+      },
+      {
+        "src": "media/weather/03.webp",
+        "w": 585,
+        "h": 1266,
+        "cap": "Forecast on mobile"
+      }
+    ],
+    "video": "media/weather/video.mp4"
+  },
+  "movie": {
+    "slug": "movie",
+    "cover": "media/movie/cover.webp",
+    "gallery": [
+      {
+        "src": "media/movie/01.webp",
+        "w": 1200,
+        "h": 750,
+        "cap": "Search results with filters"
+      },
+      {
+        "src": "media/movie/02.webp",
+        "w": 1200,
+        "h": 750,
+        "cap": "Details with ratings from three sources"
+      },
+      {
+        "src": "media/movie/03.webp",
+        "w": 1200,
+        "h": 750,
+        "cap": "Watchlist with watched tracking"
+      }
+    ],
+    "video": "media/movie/video.mp4"
+  },
+  "netflix": {
+    "slug": "netflix",
+    "cover": "media/netflix/cover.webp",
+    "gallery": [
+      {
+        "src": "media/netflix/01.webp",
+        "w": 1200,
+        "h": 750,
+        "cap": "Home with trending hero and genre rows"
+      },
+      {
+        "src": "media/netflix/02.webp",
+        "w": 1200,
+        "h": 750,
+        "cap": "Details dialog with trailer, cast and similar films"
+      },
+      {
+        "src": "media/netflix/03.webp",
+        "w": 1200,
+        "h": 750,
+        "cap": "Search across the TMDB catalogue"
+      },
+      {
+        "src": "media/netflix/04.webp",
+        "w": 1200,
+        "h": 750,
+        "cap": "Sign-in page with poster wall"
+      }
+    ],
+    "video": "media/netflix/video.mp4"
+  },
+  "bmi": {
+    "slug": "bmi",
+    "cover": "media/bmi/cover.webp",
+    "gallery": [
+      {
+        "src": "media/bmi/01.webp",
+        "w": 1200,
+        "h": 750,
+        "cap": "Result on the measuring-tape scale"
+      },
+      {
+        "src": "media/bmi/02.webp",
+        "w": 585,
+        "h": 1266,
+        "cap": "Imperial units and reading history on mobile"
+      }
+    ],
+    "video": "media/bmi/video.mp4"
+  }
+}

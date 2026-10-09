@@ -67,7 +67,7 @@
     <div class="kpis">
       <div class="kpi"><span class="kpi-num" data-count="29">29</span><span class="kpi-label">public repositories on GitHub</span></div>
       <div class="kpi"><span class="kpi-num" data-count="829" data-suffix="K+">829<em>K+</em></span><span class="kpi-label">sales records modelled in Power BI</span></div>
-      <div class="kpi"><span class="kpi-num" data-count="86" data-suffix="%">86<em>%</em></span><span class="kpi-label">accuracy on a tuned churn model</span></div>
+      <div class="kpi"><span class="kpi-num" data-count="62" data-suffix="%">62<em>%</em></span><span class="kpi-label">of bank churners caught in the riskiest fifth</span></div>
       <div class="kpi"><span class="kpi-num" data-count="278">278</span><span class="kpi-label">countries charted, 1750 to 2021</span></div>
     </div>
   </div>
@@ -131,7 +131,7 @@
       <div>
         <p class="sql"><span class="kw">SELECT</span> * <span class="kw">FROM</span> projects <span class="kw">ORDER BY</span> impact <span class="kw">DESC</span>;</p>
         <h2 class="sec-title">Selected work</h2>
-        <p class="sec-sub" style="margin-top:14px">Each project plays a short reel built from the screenshots and charts in its repository. Open any card for the full set.</p>
+        <p class="sec-sub" style="margin-top:14px">Each card plays a short clip: a screen recording of the live project, or a reel built from its repository. Open any card for the full set.</p>
       </div>
       <div class="filters" role="group" aria-label="Filter projects">
         <button type="button" data-filter="all" aria-pressed="true">All <span class="n">10</span></button>
@@ -142,85 +142,85 @@
 
     <div class="cards" id="cards">
       <article class="card" data-cat="data" data-slug="churn">
-        <button type="button" class="media" data-open="churn" data-video="media/churn/video.mp4" aria-label="Open media for Bank Customer Churn Classification"><img src="media/churn/cover.webp" alt="" loading="lazy" decoding="async" width="1200" height="750"><span class="m-badge"><i class="dot"></i>Project reel</span><span class="m-open">Watch · 3 images<svg viewBox="0 0 16 16" aria-hidden="true"><path d="M9 2h5v5M14 2 8.5 7.5M7 14H2V9M2 14l5.5-5.5" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></span><span class="m-prog"></span></button>
+        <button type="button" class="media" data-open="churn" data-video="media/churn/video.mp4" aria-label="Open media for Bank Customer Churn Classification"><img src="media/churn/cover.webp" alt="" loading="lazy" decoding="async" width="1200" height="750"><span class="m-badge"><i class="dot"></i>Live recording</span><span class="m-open">Watch · 3 images<svg viewBox="0 0 16 16" aria-hidden="true"><path d="M9 2h5v5M14 2 8.5 7.5M7 14H2V9M2 14l5.5-5.5" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></span><span class="m-prog"></span></button>
         <div class="card-body">
           <div class="card-meta"><span>Machine learning</span><span>Python</span></div>
           <h3>Bank Customer Churn Classification</h3>
-          <p>Predicts which bank customers are likely to leave. Compares Logistic Regression with Random Forest, then tunes the decision threshold using ROC analysis.</p>
-          <div class="card-kpi"><strong>86%</strong><span>tuned model accuracy across 10,000 customer records</span></div>
-          <ul class="stack"><li>Python</li><li>pandas</li><li>scikit-learn</li></ul>
-          <div class="card-links"><a class="card-link stretch" href="https://github.com/Scarface96/Bank-Customer-Churn-Classification" target="_blank" rel="noopener">View repository <span class="arr">↗</span></a></div>
+          <p>Predicts which of 10,000 bank customers will leave, compares four models on held-out data, and turns the scores into an in-browser risk calculator and retention budget planner.</p>
+          <div class="card-kpi"><strong>0.86</strong><span>ROC AUC; the riskiest fifth of customers holds 62% of churners</span></div>
+          <ul class="stack"><li>Python</li><li>pandas</li><li>scikit-learn</li><li>Plotly</li></ul>
+          <div class="card-links"><a class="card-link stretch" href="https://github.com/Scarface96/Bank-Customer-Churn-Classification" target="_blank" rel="noopener">Repository <span class="arr">↗</span></a><a class="card-link live" href="https://scarface96.github.io/Bank-Customer-Churn-Classification/" target="_blank" rel="noopener">Live report <span class="arr">↗</span></a></div>
         </div>
       </article>
 
       <article class="card" data-cat="data" data-slug="toy">
-        <button type="button" class="media" data-open="toy" data-video="media/toy/video.mp4" aria-label="Open media for Toy Store KPI Report"><img src="media/toy/cover.webp" alt="" loading="lazy" decoding="async" width="1200" height="750"><span class="m-badge"><i class="dot"></i>Project reel</span><span class="m-open">Watch · 2 images<svg viewBox="0 0 16 16" aria-hidden="true"><path d="M9 2h5v5M14 2 8.5 7.5M7 14H2V9M2 14l5.5-5.5" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></span><span class="m-prog"></span></button>
+        <button type="button" class="media" data-open="toy" data-video="media/toy/video.mp4" aria-label="Open media for Toy Store KPI Report"><img src="media/toy/cover.webp" alt="" loading="lazy" decoding="async" width="1200" height="750"><span class="m-badge"><i class="dot"></i>Live recording</span><span class="m-open">Watch · 3 images<svg viewBox="0 0 16 16" aria-hidden="true"><path d="M9 2h5v5M14 2 8.5 7.5M7 14H2V9M2 14l5.5-5.5" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></span><span class="m-prog"></span></button>
         <div class="card-body">
-          <div class="card-meta"><span>Business intelligence</span><span>Power BI</span></div>
+          <div class="card-meta"><span>Business intelligence</span><span>Power BI · Python</span></div>
           <h3>Toy Store KPI Report</h3>
-          <p>Retail performance dashboard for a multi-store toy business, built on a star-schema model with DAX measures for revenue, profit and drill-down analysis.</p>
-          <div class="card-kpi"><strong>829K+</strong><span>sales records in the model</span></div>
-          <ul class="stack"><li>Power BI</li><li>DAX</li><li>Data modelling</li></ul>
-          <div class="card-links"><a class="card-link stretch" href="https://github.com/Scarface96/Toy-Store-KPI-Report" target="_blank" rel="noopener">View repository <span class="arr">↗</span></a></div>
+          <p>829,262 sales across 50 stores: a product portfolio map, weekday and seasonal buying patterns, and a backtested Q4 forecast, alongside the original Power BI model.</p>
+          <div class="card-kpi"><strong>+31%</strong><span>revenue growth, against only +16% for profit</span></div>
+          <ul class="stack"><li>Power BI</li><li>DAX</li><li>Python</li><li>statsmodels</li></ul>
+          <div class="card-links"><a class="card-link stretch" href="https://github.com/Scarface96/Toy-Store-KPI-Report" target="_blank" rel="noopener">Repository <span class="arr">↗</span></a><a class="card-link live" href="https://scarface96.github.io/Toy-Store-KPI-Report/" target="_blank" rel="noopener">Live report <span class="arr">↗</span></a></div>
         </div>
       </article>
 
       <article class="card" data-cat="data" data-slug="b2b">
-        <button type="button" class="media" data-open="b2b" data-video="media/b2b/video.mp4" aria-label="Open media for B2B Sales Pipeline CRM Dashboard"><img src="media/b2b/cover.webp" alt="" loading="lazy" decoding="async" width="1200" height="750"><span class="m-badge"><i class="dot"></i>Project reel</span><span class="m-open">Watch · 2 images<svg viewBox="0 0 16 16" aria-hidden="true"><path d="M9 2h5v5M14 2 8.5 7.5M7 14H2V9M2 14l5.5-5.5" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></span><span class="m-prog"></span></button>
+        <button type="button" class="media" data-open="b2b" data-video="media/b2b/video.mp4" aria-label="Open media for B2B Sales Pipeline CRM Dashboard"><img src="media/b2b/cover.webp" alt="" loading="lazy" decoding="async" width="1200" height="750"><span class="m-badge"><i class="dot"></i>Live recording</span><span class="m-open">Watch · 3 images<svg viewBox="0 0 16 16" aria-hidden="true"><path d="M9 2h5v5M14 2 8.5 7.5M7 14H2V9M2 14l5.5-5.5" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></span><span class="m-prog"></span></button>
         <div class="card-body">
-          <div class="card-meta"><span>Sales analytics</span><span>Excel</span></div>
+          <div class="card-meta"><span>Sales analytics</span><span>Excel · Python</span></div>
           <h3>B2B Sales Pipeline CRM Dashboard</h3>
-          <p>Interactive dashboard tracking the quarterly pipeline and agent performance, with manager and region slicers and stage-by-stage reporting.</p>
-          <div class="card-kpi"><strong>8,800</strong><span>sales opportunities tracked</span></div>
-          <ul class="stack"><li>Excel</li><li>PivotTables</li><li>CRM analytics</li></ul>
-          <div class="card-links"><a class="card-link stretch" href="https://github.com/Scarface96/B2B-Sales-Pipeline-CRM-Dashboard-for-TechSolutions-Inc." target="_blank" rel="noopener">View repository <span class="arr">↗</span></a></div>
+          <p>Agent win rates with honest confidence ranges, a health check of the open pipeline, and a filterable leaderboard for every sales team, alongside the original Excel dashboard.</p>
+          <div class="card-kpi"><strong>90%</strong><span>of open deals are older than almost any deal ever won</span></div>
+          <ul class="stack"><li>Excel</li><li>Python</li><li>pandas</li><li>Plotly</li></ul>
+          <div class="card-links"><a class="card-link stretch" href="https://github.com/Scarface96/B2B-Sales-Pipeline-CRM-Dashboard-for-TechSolutions-Inc." target="_blank" rel="noopener">Repository <span class="arr">↗</span></a><a class="card-link live" href="https://scarface96.github.io/B2B-Sales-Pipeline-CRM-Dashboard-for-TechSolutions-Inc./" target="_blank" rel="noopener">Live report <span class="arr">↗</span></a></div>
         </div>
       </article>
 
       <article class="card" data-cat="data" data-slug="co2">
-        <button type="button" class="media" data-open="co2" data-video="media/co2/video.mp4" aria-label="Open media for Global CO₂ Emissions Dashboard"><img src="media/co2/cover.webp" alt="" loading="lazy" decoding="async" width="1200" height="750"><span class="m-badge"><i class="dot"></i>Project reel</span><span class="m-open">Watch · 3 images<svg viewBox="0 0 16 16" aria-hidden="true"><path d="M9 2h5v5M14 2 8.5 7.5M7 14H2V9M2 14l5.5-5.5" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></span><span class="m-prog"></span></button>
+        <button type="button" class="media" data-open="co2" data-video="media/co2/video.mp4" aria-label="Open media for Global CO₂ Emissions Dashboard"><img src="media/co2/cover.webp" alt="" loading="lazy" decoding="async" width="1200" height="750"><span class="m-badge"><i class="dot"></i>Live recording</span><span class="m-open">Watch · 3 images<svg viewBox="0 0 16 16" aria-hidden="true"><path d="M9 2h5v5M14 2 8.5 7.5M7 14H2V9M2 14l5.5-5.5" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></span><span class="m-prog"></span></button>
         <div class="card-body">
-          <div class="card-meta"><span>Data visualisation</span><span>Tableau</span></div>
+          <div class="card-meta"><span>Data visualisation</span><span>Tableau · Python</span></div>
           <h3>Global CO₂ Emissions Dashboard</h3>
-          <p>Long-run analysis of global emissions using maps, trend lines and comparative views, written as a sustainability story.</p>
-          <div class="card-kpi"><strong>278</strong><span>countries, with history from 1750 to 2021</span></div>
-          <ul class="stack"><li>Tableau</li><li>Data visualisation</li></ul>
-          <div class="card-links"><a class="card-link stretch" href="https://github.com/Scarface96/Global-CO2-Emissions-Dashboard" target="_blank" rel="noopener">View repository <span class="arr">↗</span></a></div>
+          <p>An animated world map of emissions per person, historical responsibility against population, and an explorer for any country's emissions mix, alongside the original Tableau dashboard.</p>
+          <div class="card-kpi"><strong>24%</strong><span>of all CO₂ ever emitted came from the United States</span></div>
+          <ul class="stack"><li>Tableau</li><li>Python</li><li>pandas</li><li>Plotly</li></ul>
+          <div class="card-links"><a class="card-link stretch" href="https://github.com/Scarface96/Global-CO2-Emissions-Dashboard" target="_blank" rel="noopener">Repository <span class="arr">↗</span></a><a class="card-link live" href="https://scarface96.github.io/Global-CO2-Emissions-Dashboard/" target="_blank" rel="noopener">Live report <span class="arr">↗</span></a></div>
         </div>
       </article>
 
       <article class="card" data-cat="data" data-slug="hr">
-        <button type="button" class="media" data-open="hr" data-video="media/hr/video.mp4" aria-label="Open media for HR Analytics Dashboard"><img src="media/hr/cover.webp" alt="" loading="lazy" decoding="async" width="1200" height="750"><span class="m-badge"><i class="dot"></i>Project reel</span><span class="m-open">Watch · 3 images<svg viewBox="0 0 16 16" aria-hidden="true"><path d="M9 2h5v5M14 2 8.5 7.5M7 14H2V9M2 14l5.5-5.5" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></span><span class="m-prog"></span></button>
+        <button type="button" class="media" data-open="hr" data-video="media/hr/video.mp4" aria-label="Open media for HR Analytics Dashboard"><img src="media/hr/cover.webp" alt="" loading="lazy" decoding="async" width="1200" height="750"><span class="m-badge"><i class="dot"></i>Live recording</span><span class="m-open">Watch · 3 images<svg viewBox="0 0 16 16" aria-hidden="true"><path d="M9 2h5v5M14 2 8.5 7.5M7 14H2V9M2 14l5.5-5.5" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></span><span class="m-prog"></span></button>
         <div class="card-body">
-          <div class="card-meta"><span>People analytics</span><span>Tableau</span></div>
+          <div class="card-meta"><span>People analytics</span><span>Tableau · Python</span></div>
           <h3>HR Analytics Dashboard</h3>
-          <p>Workforce dashboard on employee attrition, with department and age analysis plus gender and education breakdowns.</p>
-          <div class="card-kpi"><strong>1,470</strong><span>employee records analysed</span></div>
-          <ul class="stack"><li>Tableau</li><li>HR analytics</li></ul>
-          <div class="card-links"><a class="card-link stretch" href="https://github.com/Scarface96/HR-Analysis-Dashboard" target="_blank" rel="noopener">View repository <span class="arr">↗</span></a></div>
+          <p>Why 16% of 1,470 employees left: overtime and seniority effects, attrition drivers as odds ratios, and an explorer for any group, alongside the original Tableau dashboard.</p>
+          <div class="card-kpi"><strong>53%</strong><span>of entry-level staff on overtime have left</span></div>
+          <ul class="stack"><li>Tableau</li><li>Python</li><li>statsmodels</li><li>Plotly</li></ul>
+          <div class="card-links"><a class="card-link stretch" href="https://github.com/Scarface96/HR-Analysis-Dashboard" target="_blank" rel="noopener">Repository <span class="arr">↗</span></a><a class="card-link live" href="https://scarface96.github.io/HR-Analysis-Dashboard/" target="_blank" rel="noopener">Live report <span class="arr">↗</span></a></div>
         </div>
       </article>
 
       <article class="card" data-cat="data" data-slug="retail">
-        <button type="button" class="media" data-open="retail" data-video="media/retail/video.mp4" aria-label="Open media for Retail Sales SQL Analysis"><img src="media/retail/cover.webp" alt="" loading="lazy" decoding="async" width="1200" height="750"><span class="m-badge"><i class="dot"></i>Project reel</span><span class="m-open">Watch · 2 images<svg viewBox="0 0 16 16" aria-hidden="true"><path d="M9 2h5v5M14 2 8.5 7.5M7 14H2V9M2 14l5.5-5.5" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></span><span class="m-prog"></span></button>
+        <button type="button" class="media" data-open="retail" data-video="media/retail/video.mp4" aria-label="Open media for Retail Sales SQL Analysis"><img src="media/retail/cover.webp" alt="" loading="lazy" decoding="async" width="1200" height="750"><span class="m-badge"><i class="dot"></i>Live recording</span><span class="m-open">Watch · 3 images<svg viewBox="0 0 16 16" aria-hidden="true"><path d="M9 2h5v5M14 2 8.5 7.5M7 14H2V9M2 14l5.5-5.5" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></span><span class="m-prog"></span></button>
         <div class="card-body">
-          <div class="card-meta"><span>SQL analysis</span><span>PostgreSQL</span></div>
+          <div class="card-meta"><span>SQL analysis</span><span>PostgreSQL · DuckDB</span></div>
           <h3>Retail Sales SQL Analysis</h3>
-          <p>Database setup and validation, data cleaning and exploratory analysis, then business KPI queries on category and customer behaviour.</p>
-          <div class="card-kpi"><strong>CTEs</strong><span>and window functions for customer and category insight</span></div>
-          <ul class="stack"><li>PostgreSQL</li><li>SQL</li><li>EDA</li></ul>
-          <div class="card-links"><a class="card-link stretch" href="https://github.com/Scarface96/sql_retail_sales_p1" target="_blank" rel="noopener">View repository <span class="arr">↗</span></a></div>
+          <p>The PostgreSQL questions shown beside their live results, RFM customer segments, and an in-browser DuckDB editor for writing your own queries.</p>
+          <div class="card-kpi"><strong>1,997</strong><span>transactions you can query live in the browser</span></div>
+          <ul class="stack"><li>PostgreSQL</li><li>SQL</li><li>DuckDB</li><li>Python</li></ul>
+          <div class="card-links"><a class="card-link stretch" href="https://github.com/Scarface96/sql_retail_sales_p1" target="_blank" rel="noopener">Repository <span class="arr">↗</span></a><a class="card-link live" href="https://scarface96.github.io/sql_retail_sales_p1/" target="_blank" rel="noopener">Live report <span class="arr">↗</span></a></div>
         </div>
       </article>
 
       <article class="card" data-cat="web" data-slug="netflix">
-        <button type="button" class="media" data-open="netflix" aria-label="Open media for Netflix Clone"><img src="media/netflix/cover.webp" alt="" loading="lazy" decoding="async" width="1200" height="750"><span class="m-badge"><i class="dot wip"></i>Code preview</span><span class="m-open">View details<svg viewBox="0 0 16 16" aria-hidden="true"><path d="M9 2h5v5M14 2 8.5 7.5M7 14H2V9M2 14l5.5-5.5" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></span><span class="m-prog"></span></button>
+        <button type="button" class="media" data-open="netflix" data-video="media/netflix/video.mp4" aria-label="Open Reelhouse (Netflix-style app)"><img src="media/netflix/cover.webp" alt="" loading="lazy" decoding="async" width="1200" height="750"><span class="m-badge"><i class="dot"></i>Live recording</span><span class="m-open">Watch · 4 images<svg viewBox="0 0 16 16" aria-hidden="true"><path d="M9 2h5v5M14 2 8.5 7.5M7 14H2V9M2 14l5.5-5.5" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></span><span class="m-prog"></span></button>
         <div class="card-body">
-          <div class="card-meta"><span>Web app</span><span>React</span></div>
-          <h3>Netflix Clone</h3>
-          <p>A streaming-style React app with Firebase sign-in, live catalogue data from the TMDB API, and saved shows per user.</p>
+          <div class="card-meta"><span>Web app</span><span>React · Firebase</span></div>
+          <h3>Reelhouse (Netflix-style app)</h3>
+          <p>A streaming-style film browser with live TMDB data, trailers, search, Firebase accounts and a My List that syncs across devices.</p>
           <ul class="stack"><li>React</li><li>Tailwind CSS</li><li>Firebase</li><li>TMDB API</li></ul>
-          <div class="card-links"><a class="card-link stretch" href="https://github.com/Scarface96/netflix-clone" target="_blank" rel="noopener">View repository <span class="arr">↗</span></a></div>
+          <div class="card-links"><a class="card-link stretch" href="https://github.com/Scarface96/netflix-clone" target="_blank" rel="noopener">Repository <span class="arr">↗</span></a><a class="card-link live" href="https://scarface96.github.io/netflix-clone/" target="_blank" rel="noopener">Live demo <span class="arr">↗</span></a></div>
         </div>
       </article>
 
@@ -236,24 +236,24 @@
       </article>
 
       <article class="card" data-cat="web" data-slug="movie">
-        <button type="button" class="media" data-open="movie" aria-label="Open media for Movie Search App"><img src="media/movie/cover.webp" alt="" loading="lazy" decoding="async" width="1200" height="750"><span class="m-badge"><i class="dot wip"></i>Code preview</span><span class="m-open">View details<svg viewBox="0 0 16 16" aria-hidden="true"><path d="M9 2h5v5M14 2 8.5 7.5M7 14H2V9M2 14l5.5-5.5" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></span><span class="m-prog"></span></button>
+        <button type="button" class="media" data-open="movie" data-video="media/movie/video.mp4" aria-label="Open media for Movie Search App"><img src="media/movie/cover.webp" alt="" loading="lazy" decoding="async" width="1200" height="750"><span class="m-badge"><i class="dot"></i>Live recording</span><span class="m-open">Watch · 3 images<svg viewBox="0 0 16 16" aria-hidden="true"><path d="M9 2h5v5M14 2 8.5 7.5M7 14H2V9M2 14l5.5-5.5" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></span><span class="m-prog"></span></button>
         <div class="card-body">
           <div class="card-meta"><span>Web app</span><span>React</span></div>
           <h3>Movie Search App</h3>
-          <p>A React search interface for films, powered by the OMDb REST API and styled with styled-components.</p>
-          <ul class="stack"><li>React</li><li>Axios</li><li>styled-components</li><li>REST API</li></ul>
-          <div class="card-links"><a class="card-link stretch" href="https://github.com/Scarface96/movie-app" target="_blank" rel="noopener">View repository <span class="arr">↗</span></a></div>
+          <p>Search films and series, compare ratings from three sources, and keep a watchlist with watched tracking.</p>
+          <ul class="stack"><li>React</li><li>OMDb API</li><li>Jest</li></ul>
+          <div class="card-links"><a class="card-link stretch" href="https://github.com/Scarface96/movie-app" target="_blank" rel="noopener">Repository <span class="arr">↗</span></a><a class="card-link live" href="https://scarface96.github.io/movie-app/" target="_blank" rel="noopener">Live demo <span class="arr">↗</span></a></div>
         </div>
       </article>
 
       <article class="card" data-cat="web" data-slug="weather">
-        <button type="button" class="media" data-open="weather" data-video="media/weather/video.mp4" aria-label="Open media for Weather React App"><img src="media/weather/cover.webp" alt="" loading="lazy" decoding="async" width="1200" height="750"><span class="m-badge"><i class="dot"></i>Project reel</span><span class="m-open">Watch · 2 images<svg viewBox="0 0 16 16" aria-hidden="true"><path d="M9 2h5v5M14 2 8.5 7.5M7 14H2V9M2 14l5.5-5.5" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></span><span class="m-prog"></span></button>
+        <button type="button" class="media" data-open="weather" data-video="media/weather/video.mp4" aria-label="Open media for Weather React App"><img src="media/weather/cover.webp" alt="" loading="lazy" decoding="async" width="1200" height="750"><span class="m-badge"><i class="dot"></i>Live recording</span><span class="m-open">Watch · 3 images<svg viewBox="0 0 16 16" aria-hidden="true"><path d="M9 2h5v5M14 2 8.5 7.5M7 14H2V9M2 14l5.5-5.5" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></span><span class="m-prog"></span></button>
         <div class="card-body">
           <div class="card-meta"><span>Web app</span><span>React</span></div>
           <h3>Weather React App</h3>
-          <p>Search any city and get its current conditions, using live data from the OpenWeatherMap API.</p>
-          <ul class="stack"><li>React</li><li>OpenWeatherMap</li><li>Axios</li></ul>
-          <div class="card-links"><a class="card-link stretch" href="https://github.com/Scarface96/weather-react-app" target="_blank" rel="noopener">View repository <span class="arr">↗</span></a></div>
+          <p>Search any city for current conditions, the next 24 hours and a 7-day forecast, with a sky that changes with the real weather.</p>
+          <ul class="stack"><li>React</li><li>Open-Meteo</li><li>Jest</li></ul>
+          <div class="card-links"><a class="card-link stretch" href="https://github.com/Scarface96/weather-react-app" target="_blank" rel="noopener">Repository <span class="arr">↗</span></a><a class="card-link live" href="https://scarface96.github.io/weather-react-app/" target="_blank" rel="noopener">Live demo <span class="arr">↗</span></a></div>
         </div>
       </article>
     </div>
@@ -267,7 +267,7 @@
         <div class="qhead"><span>Analysis</span><span>type</span></div>
         <a href="https://github.com/Scarface96/AirBnB-Listing-Analysis-Review" target="_blank" rel="noopener" data-open="airbnb" data-cover="media/airbnb/cover.webp" data-video="media/airbnb/video.mp4"><span class="th"><img src="media/airbnb/cover.webp" alt="" loading="lazy" width="96" height="60"></span><span class="nm">Airbnb Listings Analysis</span><span class="ty">EDA</span><span class="go">↗</span></a>
         <a href="https://github.com/Scarface96/Restaurant-Order-Analysis" target="_blank" rel="noopener" data-open="restaurant" data-cover="media/restaurant/cover.webp" data-video="media/restaurant/video.mp4"><span class="th"><img src="media/restaurant/cover.webp" alt="" loading="lazy" width="96" height="60"></span><span class="nm">Restaurant Order Analysis</span><span class="ty">SQL</span><span class="go">↗</span></a>
-        <a href="https://github.com/Scarface96/covid-project" target="_blank" rel="noopener" data-open="covid" data-cover="media/covid/cover.webp"><span class="th"><img src="media/covid/cover.webp" alt="" loading="lazy" width="96" height="60"></span><span class="nm">COVID-19 Data Exploration</span><span class="ty">SQL</span><span class="go">↗</span></a>
+        <a href="https://github.com/Scarface96/covid-project" target="_blank" rel="noopener" data-open="covid" data-cover="media/covid/cover.webp" data-video="media/covid/video.mp4"><span class="th"><img src="media/covid/cover.webp" alt="" loading="lazy" width="96" height="60"></span><span class="nm">COVID-19 Data Exploration</span><span class="ty">SQL</span><span class="go">↗</span></a>
         <a href="https://github.com/Scarface96/Customer_purchase_behaviour" target="_blank" rel="noopener" data-open="customer" data-cover="media/customer/cover.webp"><span class="th"><img src="media/customer/cover.webp" alt="" loading="lazy" width="96" height="60"></span><span class="nm">Customer Purchase Behaviour</span><span class="ty">analysis</span><span class="go">↗</span></a>
         <p class="rows">(4 rows)</p>
       </div>

@@ -9,205 +9,263 @@ const PROJECTS = [
     "stack": [
       "Python",
       "pandas",
-      "scikit-learn"
+      "scikit-learn",
+      "Plotly"
     ],
-    "desc": "Predicts which bank customers are likely to leave. Compares Logistic Regression with Random Forest, then tunes the decision threshold with ROC analysis, reaching 86% accuracy on 10,000 customer records.",
+    "desc": "Predicts which of 10,000 bank customers will leave. Four models are compared on held-out customers, and gradient boosting reaches 0.86 ROC AUC: the riskiest fifth of customers holds 62% of those who leave. The live report adds an in-browser risk calculator and a retention budget planner.",
     "repo": "https://github.com/Scarface96/Bank-Customer-Churn-Classification",
     "cover": "media/churn/cover.webp",
     "gallery": [
       {
         "src": "media/churn/01.webp",
-        "w": 567,
-        "h": 453,
-        "cap": "ROC curve, AUC 0.77"
+        "w": 1032,
+        "h": 813,
+        "cap": "Four models compared on held-out customers"
       },
       {
         "src": "media/churn/02.webp",
-        "w": 567,
-        "h": 453,
-        "cap": "Precision and recall by threshold"
+        "w": 1032,
+        "h": 455,
+        "cap": "In-browser churn-risk calculator"
       },
       {
         "src": "media/churn/03.webp",
-        "w": 702,
-        "h": 432,
-        "cap": "Random forest feature importance"
+        "w": 1032,
+        "h": 870,
+        "cap": "Retention budget planner"
       }
     ],
     "video": "media/churn/video.mp4",
-    "vkind": "reel"
+    "vkind": "recording",
+    "live": "https://scarface96.github.io/Bank-Customer-Churn-Classification/"
   },
   {
     "slug": "toy",
     "title": "Toy Store KPI Report",
-    "kick": "Business intelligence · Power BI",
+    "kick": "Business intelligence · Power BI, Python",
     "stack": [
       "Power BI",
       "DAX",
-      "Data modelling"
+      "Python",
+      "statsmodels"
     ],
-    "desc": "Retail performance dashboard for a multi-store toy business. A star-schema model over 829K+ sales records with DAX measures for revenue, profit and drill-down analysis.",
+    "desc": "Sales from 50 toy stores and 829,262 transactions. Revenue grew 31% this year while profit grew only 16%; the report maps every product by volume and margin, shows when customers buy, and backtests a Q4 forecast. It sits alongside the original Power BI model.",
     "repo": "https://github.com/Scarface96/Toy-Store-KPI-Report",
     "cover": "media/toy/cover.webp",
     "gallery": [
       {
         "src": "media/toy/01.webp",
-        "w": 1200,
-        "h": 640,
-        "cap": "Monthly revenue across 50 stores"
+        "w": 1032,
+        "h": 739,
+        "cap": "Product portfolio map: units, margin and profit"
       },
       {
         "src": "media/toy/02.webp",
-        "w": 1200,
-        "h": 507,
-        "cap": "Revenue by product category"
+        "w": 1032,
+        "h": 704,
+        "cap": "Average daily revenue by weekday and month"
+      },
+      {
+        "src": "media/toy/03.webp",
+        "w": 1032,
+        "h": 826,
+        "cap": "Backtested Q4 2023 forecast"
       }
     ],
     "video": "media/toy/video.mp4",
-    "vkind": "reel"
+    "vkind": "recording",
+    "live": "https://scarface96.github.io/Toy-Store-KPI-Report/"
   },
   {
     "slug": "b2b",
     "title": "B2B Sales Pipeline CRM Dashboard",
-    "kick": "Sales analytics · Excel",
+    "kick": "Sales analytics · Excel, Python",
     "stack": [
       "Excel",
-      "PivotTables",
-      "CRM analytics"
+      "Python",
+      "pandas",
+      "Plotly"
     ],
-    "desc": "Interactive dashboard tracking the quarterly pipeline and agent performance across 8,800 opportunities, with manager and region slicers.",
+    "desc": "A B2B CRM pipeline: $10.0M won in 2017 at a 63% win rate. Agent win rates come with 95% confidence ranges, the 1,589 open deals are checked against how long winning deals really take, and a filterable leaderboard covers every team.",
     "repo": "https://github.com/Scarface96/B2B-Sales-Pipeline-CRM-Dashboard-for-TechSolutions-Inc.",
     "cover": "media/b2b/cover.webp",
     "gallery": [
       {
         "src": "media/b2b/01.webp",
-        "w": 1200,
-        "h": 560,
-        "cap": "Won deal value by quarter"
+        "w": 1032,
+        "h": 989,
+        "cap": "Agent win rates with 95% confidence ranges"
       },
       {
         "src": "media/b2b/02.webp",
-        "w": 1200,
-        "h": 587,
-        "cap": "Top 8 agents by won deal value"
+        "w": 1032,
+        "h": 771,
+        "cap": "Open deals vs how long winning deals take"
+      },
+      {
+        "src": "media/b2b/03.webp",
+        "w": 1032,
+        "h": 939,
+        "cap": "Filterable team leaderboard"
       }
     ],
     "video": "media/b2b/video.mp4",
-    "vkind": "reel"
+    "vkind": "recording",
+    "live": "https://scarface96.github.io/B2B-Sales-Pipeline-CRM-Dashboard-for-TechSolutions-Inc./"
   },
   {
     "slug": "co2",
     "title": "Global CO₂ Emissions Dashboard",
-    "kick": "Data visualisation · Tableau",
+    "kick": "Data visualisation · Tableau, Python",
     "stack": [
       "Tableau",
-      "Data visualisation"
+      "Python",
+      "pandas",
+      "Plotly"
     ],
-    "desc": "Long-run analysis of emissions across 278 countries from 1750 to 2021, using maps, trend lines and comparative views.",
+    "desc": "World CO₂ emissions by country, per person and over history. The United States has emitted 24% of all CO₂ ever, while China now emits 31% of each year's total. Includes an animated world map, responsibility against population, and an explorer for any country.",
     "repo": "https://github.com/Scarface96/Global-CO2-Emissions-Dashboard",
     "cover": "media/co2/cover.webp",
     "gallery": [
       {
         "src": "media/co2/01.webp",
-        "w": 384,
-        "h": 384,
-        "cap": "Tableau dashboard preview"
+        "w": 1032,
+        "h": 801,
+        "cap": "Animated map of CO₂ per person"
       },
       {
         "src": "media/co2/02.webp",
-        "w": 1200,
-        "h": 640,
-        "cap": "Global emissions, 1850 to 2021"
+        "w": 1032,
+        "h": 711,
+        "cap": "Historical responsibility vs population"
       },
       {
         "src": "media/co2/03.webp",
-        "w": 1200,
-        "h": 613,
-        "cap": "Top 10 emitters in 2021"
+        "w": 1032,
+        "h": 1000,
+        "cap": "Country explorer"
       }
     ],
     "video": "media/co2/video.mp4",
-    "vkind": "reel"
+    "vkind": "recording",
+    "live": "https://scarface96.github.io/Global-CO2-Emissions-Dashboard/"
   },
   {
     "slug": "hr",
     "title": "HR Analytics Dashboard",
-    "kick": "People analytics · Tableau",
+    "kick": "People analytics · Tableau, Python",
     "stack": [
       "Tableau",
-      "HR analytics"
+      "Python",
+      "statsmodels",
+      "Plotly"
     ],
-    "desc": "Workforce dashboard on attrition across 1,470 employees, broken down by department, age, gender and education.",
+    "desc": "Attrition across 1,470 employees. Overtime and seniority are the strongest signals: 53% of entry-level staff who work overtime have left. A logistic regression ranks the drivers as odds ratios, and a segment explorer lets you test any group.",
     "repo": "https://github.com/Scarface96/HR-Analysis-Dashboard",
     "cover": "media/hr/cover.webp",
     "gallery": [
       {
         "src": "media/hr/01.webp",
-        "w": 384,
-        "h": 384,
-        "cap": "Tableau HR dashboard"
+        "w": 1032,
+        "h": 691,
+        "cap": "Overtime and seniority"
       },
       {
         "src": "media/hr/02.webp",
-        "w": 1200,
-        "h": 480,
-        "cap": "Attrition by department"
+        "w": 1032,
+        "h": 1000,
+        "cap": "Attrition drivers as odds ratios"
       },
       {
         "src": "media/hr/03.webp",
-        "w": 1200,
-        "h": 533,
-        "cap": "Attrition by age band"
+        "w": 1032,
+        "h": 718,
+        "cap": "Segment explorer"
       }
     ],
     "video": "media/hr/video.mp4",
-    "vkind": "reel"
+    "vkind": "recording",
+    "live": "https://scarface96.github.io/HR-Analysis-Dashboard/"
   },
   {
     "slug": "retail",
     "title": "Retail Sales SQL Analysis",
-    "kick": "SQL analysis · PostgreSQL",
+    "kick": "SQL analysis · PostgreSQL, DuckDB",
     "stack": [
       "PostgreSQL",
       "SQL",
-      "EDA"
+      "DuckDB",
+      "Python"
     ],
-    "desc": "Database setup, cleaning and exploratory analysis, then business KPI queries using CTEs and window functions.",
+    "desc": "The project's SQL questions answered beside their live results, RFM customer segments and cohort retention. A real SQL engine (DuckDB) runs in the page, so visitors can write their own queries against the 1,997 transactions.",
     "repo": "https://github.com/Scarface96/sql_retail_sales_p1",
     "cover": "media/retail/cover.webp",
     "gallery": [
       {
         "src": "media/retail/01.webp",
-        "w": 1200,
-        "h": 640,
-        "cap": "Monthly retail sales"
+        "w": 1032,
+        "h": 1000,
+        "cap": "The SQL questions beside their live results"
       },
       {
         "src": "media/retail/02.webp",
-        "w": 1200,
-        "h": 373,
-        "cap": "Sales by category"
+        "w": 1032,
+        "h": 734,
+        "cap": "RFM customer segments"
+      },
+      {
+        "src": "media/retail/03.webp",
+        "w": 1032,
+        "h": 823,
+        "cap": "Live SQL editor running DuckDB in the browser"
       }
     ],
     "video": "media/retail/video.mp4",
-    "vkind": "reel"
+    "vkind": "recording",
+    "live": "https://scarface96.github.io/sql_retail_sales_p1/"
   },
   {
     "slug": "netflix",
-    "title": "Netflix Clone",
-    "kick": "Web app · React",
+    "title": "Reelhouse (Netflix-style app)",
+    "kick": "Web app · React, Firebase",
     "stack": [
       "React",
       "Tailwind CSS",
       "Firebase",
       "TMDB API"
     ],
-    "desc": "A streaming-style React app with Firebase sign-in, live catalogue data from the TMDB API, and saved shows per user.",
+    "desc": "A streaming-style film browser that grew out of a Netflix clone. Trending hero, nine genre rows, a details dialog with trailer, cast and similar films, search across TMDB, and a My List that syncs to Firestore when you sign in.",
     "repo": "https://github.com/Scarface96/netflix-clone",
     "cover": "media/netflix/cover.webp",
-    "gallery": [],
-    "video": null,
-    "vkind": null
+    "gallery": [
+      {
+        "src": "media/netflix/01.webp",
+        "w": 1200,
+        "h": 750,
+        "cap": "Home with trending hero and genre rows"
+      },
+      {
+        "src": "media/netflix/02.webp",
+        "w": 1200,
+        "h": 750,
+        "cap": "Details dialog with trailer, cast and similar films"
+      },
+      {
+        "src": "media/netflix/03.webp",
+        "w": 1200,
+        "h": 750,
+        "cap": "Search across the TMDB catalogue"
+      },
+      {
+        "src": "media/netflix/04.webp",
+        "w": 1200,
+        "h": 750,
+        "cap": "Sign-in page with poster wall"
+      }
+    ],
+    "video": "media/netflix/video.mp4",
+    "vkind": "recording",
+    "live": "https://scarface96.github.io/netflix-clone/"
   },
   {
     "slug": "kaidis",
@@ -263,16 +321,35 @@ const PROJECTS = [
     "kick": "Web app · React",
     "stack": [
       "React",
-      "Axios",
-      "styled-components",
-      "REST API"
+      "OMDb API",
+      "Jest"
     ],
-    "desc": "A React search interface for films, powered by the OMDb API with a debounced search box.",
+    "desc": "Search films and series with type and year filters, open details with IMDb, Rotten Tomatoes and Metacritic ratings, and keep a watchlist with watched tracking, saved in the browser.",
     "repo": "https://github.com/Scarface96/movie-app",
     "cover": "media/movie/cover.webp",
-    "gallery": [],
-    "video": null,
-    "vkind": null
+    "gallery": [
+      {
+        "src": "media/movie/01.webp",
+        "w": 1200,
+        "h": 750,
+        "cap": "Search results with filters"
+      },
+      {
+        "src": "media/movie/02.webp",
+        "w": 1200,
+        "h": 750,
+        "cap": "Details with ratings from three sources"
+      },
+      {
+        "src": "media/movie/03.webp",
+        "w": 1200,
+        "h": 750,
+        "cap": "Watchlist with watched tracking"
+      }
+    ],
+    "video": "media/movie/video.mp4",
+    "vkind": "recording",
+    "live": "https://scarface96.github.io/movie-app/"
   },
   {
     "slug": "weather",
@@ -280,28 +357,35 @@ const PROJECTS = [
     "kick": "Web app · React",
     "stack": [
       "React",
-      "OpenWeatherMap",
-      "Axios"
+      "Open-Meteo",
+      "Jest"
     ],
-    "desc": "Search any city and get its current conditions using live data from the OpenWeatherMap API.",
+    "desc": "Current conditions, the next 24 hours and a 7-day forecast for any city, with live search suggestions, your location, °C/°F and a sky that changes with the weather and time of day. Uses the keyless Open-Meteo API, so the live demo never breaks.",
     "repo": "https://github.com/Scarface96/weather-react-app",
     "cover": "media/weather/cover.webp",
     "gallery": [
       {
         "src": "media/weather/01.webp",
-        "w": 508,
-        "h": 551,
-        "cap": "City search screen"
+        "w": 1200,
+        "h": 750,
+        "cap": "City search with suggestions"
       },
       {
         "src": "media/weather/02.webp",
-        "w": 508,
-        "h": 637,
-        "cap": "Result for Cape Town"
+        "w": 1200,
+        "h": 750,
+        "cap": "Forecast for Tokyo"
+      },
+      {
+        "src": "media/weather/03.webp",
+        "w": 585,
+        "h": 1266,
+        "cap": "Forecast on mobile"
       }
     ],
     "video": "media/weather/video.mp4",
-    "vkind": "reel"
+    "vkind": "recording",
+    "live": "https://scarface96.github.io/weather-react-app/"
   },
   {
     "slug": "airbnb",
@@ -342,45 +426,76 @@ const PROJECTS = [
   {
     "slug": "restaurant",
     "title": "Restaurant Order Analysis",
-    "kick": "SQL analysis · MySQL",
+    "kick": "SQL analysis · MySQL, Python",
     "stack": [
       "MySQL",
-      "SQL"
+      "SQL",
+      "Python",
+      "Plotly"
     ],
-    "desc": "SQL analysis of a restaurant's menu and orders: the most and least ordered items, and what the highest-spending orders contain.",
+    "desc": "5,343 orders from a restaurant's first quarter of 2023. SQL questions answered with real results, busy-hour patterns, menu engineering (Stars, Plowhorses, Puzzles and Dogs) and which dishes are ordered together. 6 of 32 dishes are both cheap and rarely ordered.",
     "repo": "https://github.com/Scarface96/Restaurant-Order-Analysis",
     "cover": "media/restaurant/cover.webp",
     "gallery": [
       {
         "src": "media/restaurant/01.webp",
-        "w": 1200,
-        "h": 640,
-        "cap": "Most and least ordered items"
+        "w": 1032,
+        "h": 624,
+        "cap": "Busy hours by weekday"
       },
       {
         "src": "media/restaurant/02.webp",
-        "w": 1200,
-        "h": 480,
-        "cap": "Highest-spending orders by cuisine"
+        "w": 1032,
+        "h": 936,
+        "cap": "Menu engineering: Stars, Plowhorses, Puzzles and Dogs"
+      },
+      {
+        "src": "media/restaurant/03.webp",
+        "w": 1032,
+        "h": 640,
+        "cap": "What goes with each dish"
       }
     ],
     "video": "media/restaurant/video.mp4",
-    "vkind": "reel"
+    "vkind": "recording",
+    "live": "https://scarface96.github.io/Restaurant-Order-Analysis/"
   },
   {
     "slug": "covid",
     "title": "COVID-19 Data Exploration",
-    "kick": "SQL analysis · SQL Server",
+    "kick": "SQL analysis · SQL Server, Python",
     "stack": [
       "T-SQL",
-      "SQL Server"
+      "SQL Server",
+      "Python",
+      "Plotly"
     ],
-    "desc": "SQL exploration of global COVID-19 data: death rates, infection rates relative to population, and country and continent rankings.",
+    "desc": "COVID-19 cases, deaths and vaccinations worldwide, with a focus on South Africa: four waves, excess deaths suggesting the true toll was about three times the 102,595 reported, and vaccination by continent.",
     "repo": "https://github.com/Scarface96/covid-project",
     "cover": "media/covid/cover.webp",
-    "gallery": [],
-    "video": null,
-    "vkind": null
+    "gallery": [
+      {
+        "src": "media/covid/01.webp",
+        "w": 1032,
+        "h": 982,
+        "cap": "South Africa's four waves"
+      },
+      {
+        "src": "media/covid/02.webp",
+        "w": 1032,
+        "h": 895,
+        "cap": "Excess deaths vs reported COVID deaths"
+      },
+      {
+        "src": "media/covid/03.webp",
+        "w": 1032,
+        "h": 704,
+        "cap": "Vaccination by continent"
+      }
+    ],
+    "video": "media/covid/video.mp4",
+    "vkind": "recording",
+    "live": "https://scarface96.github.io/covid-project/"
   },
   {
     "slug": "customer",
@@ -563,21 +678,28 @@ const PROJECTS = [
     "stack": [
       "React",
       "JavaScript",
-      "CSS"
+      "Jest"
     ],
-    "desc": "Takes weight and height and shows the BMI result with a matching illustration.",
+    "desc": "Metric or imperial BMI with a measuring-tape scale for the WHO bands, the healthy weight range for your height, and a history of recent readings saved in the browser.",
     "repo": "https://github.com/Scarface96/bmi-calculator",
     "cover": "media/bmi/cover.webp",
     "gallery": [
       {
         "src": "media/bmi/01.webp",
-        "w": 486,
-        "h": 778,
-        "cap": "BMI result of 30.4"
+        "w": 1200,
+        "h": 750,
+        "cap": "Result on the measuring-tape scale"
+      },
+      {
+        "src": "media/bmi/02.webp",
+        "w": 585,
+        "h": 1266,
+        "cap": "Imperial units and reading history on mobile"
       }
     ],
     "video": "media/bmi/video.mp4",
-    "vkind": "reel"
+    "vkind": "recording",
+    "live": "https://scarface96.github.io/bmi-calculator/"
   },
   {
     "slug": "clock",
