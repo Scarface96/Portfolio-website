@@ -268,10 +268,8 @@ def weather(browser, url):
     gallery = app_shots(browser, "weather", url, steps)
     def script(pg):
         pg.wait_for_timeout(800)
-        pg.type("input[type=search]", "Lisbon", delay=120)
-        pg.wait_for_selector("#city-results li", timeout=15000); pg.wait_for_timeout(1200)
-        pg.keyboard.press("Enter")
-        pg.wait_for_selector("text=Feels like", timeout=20000); pg.wait_for_timeout(2000)
+        pick_city("Cape Town")(pg)
+        pg.wait_for_timeout(1500)
         smooth_scroll(pg, 7000)
     record(browser, url, MEDIA / "weather" / "video.mp4", script)
     return gallery
@@ -320,15 +318,7 @@ def netflix(browser, url):
         page.wait_for_timeout(3500)
     steps = [(home, "cover"), (home, "Home with trending hero and genre rows"), (info, "Details dialog with trailer, cast and similar films"),
              (search, "Search across the TMDB catalogue"), (signin, "Sign-in page with poster wall")]
-    # Diagnostic: does navigating away from Home crash the app?
-    ctx = browser.new_context(viewport=VIEW); pg = ctx.new_page()
-    errs = []
-    pg.on("pageerror", lambda e: errs.append(str(e)))
-    pg.goto(url); settle(pg, 2500)
-    print("   scrollTo returns:", pg.evaluate("String(window.scrollTo(0, 0))"), "| is native:", pg.evaluate("String(window.scrollTo).includes('native code')"), flush=True)
-    pg.evaluate("location.hash = '#/login'"); pg.wait_for_timeout(2500)
-    print("   home -> login errors:", errs, "| text:", pg.inner_text("body")[:80].replace("\n", " "), flush=True)
-    ctx.close()
+    # Search and sign-in are loaded directly; navigating from Home also works once netflix-clone PR #2 is merged.
     gallery = app_shots(browser, "netflix", url, steps)
     def script(pg):
         pg.wait_for_timeout(2500)
