@@ -1,0 +1,132 @@
+$ git clone -q --depth 1 https://github.com/Scarface96/weather-react-app.git /tmp/portfolio-capture/weather-react-app
+$ npm ci --no-audit --no-fund --loglevel=error && CI=false npm run build
+
+added 1313 packages in 11s
+
+> weather-react-app@2.0.0 build
+> react-scripts build
+
+Creating an optimized production build...
+Compiled successfully.
+
+File sizes after gzip:
+
+  50.08 kB  build/static/js/main.5ce21bb5.js
+  2.25 kB   build/static/css/main.cdb4cea2.css
+
+The project was built assuming it is hosted at ./.
+You can control this with the homepage field in your package.json.
+
+The build folder is ready to be deployed.
+
+Find out more about deployment here:
+
+  https://cra.link/deployment
+
+npm notice
+npm notice New major version of npm available! 10.9.9 -> 12.2.0
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v12.2.0
+npm notice To update run: npm install -g npm@12.2.0
+npm notice
+127.0.0.1 - - [09/Oct/2026 18:13:05] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [09/Oct/2026 18:13:05] "GET /static/css/main.cdb4cea2.css HTTP/1.1" 200 -
+127.0.0.1 - - [09/Oct/2026 18:13:05] "GET /static/js/main.5ce21bb5.js HTTP/1.1" 200 -
+127.0.0.1 - - [09/Oct/2026 18:13:08] "GET /icons/temp.svg HTTP/1.1" 200 -
+127.0.0.1 - - [09/Oct/2026 18:13:08] "GET /icons/cloudy-night.svg HTTP/1.1" 200 -
+127.0.0.1 - - [09/Oct/2026 18:13:08] "GET /icons/wind.svg HTTP/1.1" 200 -
+127.0.0.1 - - [09/Oct/2026 18:13:08] "GET /icons/sunny.svg HTTP/1.1" 200 -
+127.0.0.1 - - [09/Oct/2026 18:13:08] "GET /icons/pressure.svg HTTP/1.1" 200 -
+127.0.0.1 - - [09/Oct/2026 18:13:08] "GET /icons/humidity.svg HTTP/1.1" 200 -
+127.0.0.1 - - [09/Oct/2026 18:13:08] "GET /icons/night.svg HTTP/1.1" 200 -
+127.0.0.1 - - [09/Oct/2026 18:13:08] "GET /icons/cloudy.svg HTTP/1.1" 200 -
+127.0.0.1 - - [09/Oct/2026 18:13:08] "GET /icons/rain.svg HTTP/1.1" 200 -
+127.0.0.1 - - [09/Oct/2026 18:13:11] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [09/Oct/2026 18:13:11] "GET /static/css/main.cdb4cea2.css HTTP/1.1" 200 -
+127.0.0.1 - - [09/Oct/2026 18:13:11] "GET /static/js/main.5ce21bb5.js HTTP/1.1" 200 -
+127.0.0.1 - - [09/Oct/2026 18:13:17] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [09/Oct/2026 18:13:17] "GET /static/css/main.cdb4cea2.css HTTP/1.1" 200 -
+127.0.0.1 - - [09/Oct/2026 18:13:17] "GET /static/js/main.5ce21bb5.js HTTP/1.1" 200 -
+127.0.0.1 - - [09/Oct/2026 18:13:34] "GET / HTTP/1.1" 304 -
+127.0.0.1 - - [09/Oct/2026 18:13:34] "GET /static/js/main.5ce21bb5.js HTTP/1.1" 304 -
+127.0.0.1 - - [09/Oct/2026 18:13:34] "GET /static/css/main.cdb4cea2.css HTTP/1.1" 304 -
+127.0.0.1 - - [09/Oct/2026 18:13:35] "GET /icons/temp.svg HTTP/1.1" 200 -
+127.0.0.1 - - [09/Oct/2026 18:13:35] "GET /icons/humidity.svg HTTP/1.1" 200 -
+127.0.0.1 - - [09/Oct/2026 18:13:35] "GET /icons/wind.svg HTTP/1.1" 200 -
+127.0.0.1 - - [09/Oct/2026 18:13:35] "GET /icons/night.svg HTTP/1.1" 200 -
+127.0.0.1 - - [09/Oct/2026 18:13:35] "GET /icons/pressure.svg HTTP/1.1" 200 -
+127.0.0.1 - - [09/Oct/2026 18:13:35] "GET /icons/sunny.svg HTTP/1.1" 200 -
+127.0.0.1 - - [09/Oct/2026 18:13:35] "GET /icons/cloudy.svg HTTP/1.1" 200 -
+127.0.0.1 - - [09/Oct/2026 18:13:35] "GET /icons/day.svg HTTP/1.1" 200 -
+127.0.0.1 - - [09/Oct/2026 18:13:35] "GET /icons/rain.svg HTTP/1.1" 200 -
+127.0.0.1 - - [09/Oct/2026 18:13:40] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [09/Oct/2026 18:13:40] "GET /static/js/main.5ce21bb5.js HTTP/1.1" 200 -
+127.0.0.1 - - [09/Oct/2026 18:13:40] "GET /static/css/main.cdb4cea2.css HTTP/1.1" 200 -
+127.0.0.1 - - [09/Oct/2026 18:13:42] "GET /icons/cloudy-night.svg HTTP/1.1" 200 -
+127.0.0.1 - - [09/Oct/2026 18:13:42] "GET /icons/wind.svg HTTP/1.1" 200 -
+127.0.0.1 - - [09/Oct/2026 18:13:42] "GET /icons/humidity.svg HTTP/1.1" 200 -
+127.0.0.1 - - [09/Oct/2026 18:13:42] "GET /icons/pressure.svg HTTP/1.1" 200 -
+127.0.0.1 - - [09/Oct/2026 18:13:42] "GET /icons/sunny.svg HTTP/1.1" 200 -
+127.0.0.1 - - [09/Oct/2026 18:13:42] "GET /icons/temp.svg HTTP/1.1" 200 -
+127.0.0.1 - - [09/Oct/2026 18:13:42] "GET /icons/night.svg HTTP/1.1" 200 -
+127.0.0.1 - - [09/Oct/2026 18:13:42] "GET /icons/cloudy.svg HTTP/1.1" 200 -
+127.0.0.1 - - [09/Oct/2026 18:13:42] "GET /icons/rain.svg HTTP/1.1" 200 -
+127.0.0.1 - - [09/Oct/2026 18:13:46] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [09/Oct/2026 18:13:46] "GET /static/css/main.cdb4cea2.css HTTP/1.1" 200 -
+127.0.0.1 - - [09/Oct/2026 18:13:46] "GET /static/js/main.5ce21bb5.js HTTP/1.1" 200 -
+!! weather failed: Page.wait_for_selector: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator("#city-results li") to be visible
+
+$ git clone -q --depth 1 https://github.com/Scarface96/netflix-clone.git /tmp/portfolio-capture/netflix-clone
+$ npm ci --no-audit --no-fund --loglevel=error && CI=false npm run build
+
+added 1369 packages in 12s
+
+> reelhouse@2.0.0 build
+> react-scripts build
+
+Creating an optimized production build...
+Compiled successfully.
+
+File sizes after gzip:
+
+  159.44 kB  build/static/js/main.64e2b27b.js
+  4.99 kB    build/static/css/main.2b4850c9.css
+
+The project was built assuming it is hosted at ./.
+You can control this with the homepage field in your package.json.
+
+The build folder is ready to be deployed.
+
+Find out more about deployment here:
+
+  https://cra.link/deployment
+
+127.0.0.1 - - [09/Oct/2026 18:14:33] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [09/Oct/2026 18:14:33] "GET /static/js/main.64e2b27b.js HTTP/1.1" 200 -
+127.0.0.1 - - [09/Oct/2026 18:14:33] "GET /static/css/main.2b4850c9.css HTTP/1.1" 200 -
+   scrollTo returns: [object Promise] | is native: True
+   home -> login errors: ['n is not a function', 'n is not a function'] | text: 
+127.0.0.1 - - [09/Oct/2026 18:14:39] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [09/Oct/2026 18:14:39] "GET /static/js/main.64e2b27b.js HTTP/1.1" 200 -
+127.0.0.1 - - [09/Oct/2026 18:14:39] "GET /static/css/main.2b4850c9.css HTTP/1.1" 200 -
+127.0.0.1 - - [09/Oct/2026 18:14:47] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [09/Oct/2026 18:14:47] "GET /static/css/main.2b4850c9.css HTTP/1.1" 200 -
+127.0.0.1 - - [09/Oct/2026 18:14:47] "GET /static/js/main.64e2b27b.js HTTP/1.1" 200 -
+127.0.0.1 - - [09/Oct/2026 18:14:54] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [09/Oct/2026 18:14:54] "GET /static/css/main.2b4850c9.css HTTP/1.1" 200 -
+127.0.0.1 - - [09/Oct/2026 18:14:54] "GET /static/js/main.64e2b27b.js HTTP/1.1" 200 -
+127.0.0.1 - - [09/Oct/2026 18:15:04] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [09/Oct/2026 18:15:04] "GET /static/js/main.64e2b27b.js HTTP/1.1" 200 -
+127.0.0.1 - - [09/Oct/2026 18:15:04] "GET /static/css/main.2b4850c9.css HTTP/1.1" 200 -
+127.0.0.1 - - [09/Oct/2026 18:15:06] "GET /?fresh=1 HTTP/1.1" 200 -
+   netflix search text: REELHOUSE | Home | My List | Sign in | Join free | Search films | Dune | 7.8 |  | Dune |  | 2021 |  | Dune: Part Two | 8.1 |  | Dune: Part Two |  | 2024 |  | Dune | 6.2 |  | Dune |  | 1984 |  | Dune: Part Three |  | Du
+127.0.0.1 - - [09/Oct/2026 18:15:14] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [09/Oct/2026 18:15:14] "GET /static/css/main.2b4850c9.css HTTP/1.1" 200 -
+127.0.0.1 - - [09/Oct/2026 18:15:14] "GET /static/js/main.64e2b27b.js HTTP/1.1" 200 -
+127.0.0.1 - - [09/Oct/2026 18:15:17] "GET /?fresh=2 HTTP/1.1" 200 -
+127.0.0.1 - - [09/Oct/2026 18:15:25] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [09/Oct/2026 18:15:25] "GET /static/css/main.2b4850c9.css HTTP/1.1" 200 -
+127.0.0.1 - - [09/Oct/2026 18:15:25] "GET /static/js/main.64e2b27b.js HTTP/1.1" 200 -
+$ ffmpeg -y -loglevel error -ss 1.2 -i "/tmp/portfolio-capture/video/netflix/page@d304dadff1ba729bd313685cf2c96b04.webm" -vf "fps=24,scale=1200:-2" -c:v libx264 -preset slow -crf 33 -pix_fmt yuv420p -movflags +faststart -an "/home/runner/work/Portfolio-website/Portfolio-website/media/netflix/video.mp4"
+Failures: ['weather']
