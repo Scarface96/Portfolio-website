@@ -44,7 +44,7 @@
     const so = new IntersectionObserver(es => es.forEach(e => {
       if (e.isIntersecting){ $$('.nav-links a').forEach(a => a.classList.remove('active')); navMap[e.target.id] && navMap[e.target.id].classList.add('active'); }
     }), {rootMargin:'-45% 0px -50% 0px'});
-    ['work','about','toolkit','contact'].forEach(id => so.observe(document.getElementById(id)));
+    ['reel','work','about','toolkit','contact'].forEach(id => so.observe(document.getElementById(id)));
 
     /* gentle lift-in for blocks below the fold (visible at rest, transform only) */
     if (!reduce){
@@ -281,6 +281,7 @@
     showProject(PROJECTS.findIndex(p => p.slug === slug));
     lb.hidden = false; document.body.classList.add('lb-open');
     $$('.card .media video').forEach(v => v.pause());
+    if (window.TMReel) window.TMReel.pause();
     if (!reduce){
       const panel = $('#lbPanel');
       if (fromEl){
