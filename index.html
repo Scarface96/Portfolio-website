@@ -26,6 +26,7 @@
   <div class="wrap nav-inner">
     <a class="brand" href="#top" aria-label="Tony Mulunda, back to top"><span class="brand-mark">TM</span><span class="brand-name">Tony Mulunda</span></a>
     <nav class="nav-links" id="navlinks" aria-label="Sections">
+      <a href="#reel" data-sec="reel">Reel</a>
       <a href="#work" data-sec="work">Work</a>
       <a href="#about" data-sec="about">About</a>
       <a href="#toolkit" data-sec="toolkit">Toolkit</a>
@@ -51,6 +52,7 @@
       <p class="lede">I turn raw data into clear business decisions, and build the web interfaces people use to act on them.</p>
       <div class="cta">
         <a class="btn primary" href="#work">See the work <span class="arr" aria-hidden="true">→</span></a>
+        <a class="btn reel-cta" href="#reel" data-play-reel><span class="reel-cta-ic" aria-hidden="true"><svg viewBox="0 0 12 12"><path d="M3 1.8v8.4L10 6z" fill="currentColor"/></svg></span>Watch the reel</a>
         <a class="btn" href="#contact">Get in touch</a>
       </div>
     </div>
@@ -69,6 +71,71 @@
       <div class="kpi"><span class="kpi-num" data-count="829" data-suffix="K+">829<em>K+</em></span><span class="kpi-label">sales records modelled in Power BI</span></div>
       <div class="kpi"><span class="kpi-num" data-count="62" data-suffix="%">62<em>%</em></span><span class="kpi-label">of bank churners caught in the riskiest fifth</span></div>
       <div class="kpi"><span class="kpi-num" data-count="278">278</span><span class="kpi-label">countries charted, 1750 to 2021</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- SHOWREEL -->
+<section class="reel-sec" id="reel" aria-labelledby="reelTitle">
+  <div class="wrap">
+    <div class="reel reveal" id="reelBox">
+      <div class="reel-head">
+        <div>
+          <p class="sql"><span class="kw">EXEC</span> play_showreel <span class="kw">@runtime</span> = '02:00', <span class="kw">@sound</span> = 'on';</p>
+          <h2 class="reel-title" id="reelTitle">Two minutes.<br><span>Eight chapters.</span></h2>
+        </div>
+        <p class="reel-sub">The short version of how I work: the problem, the process and the proof, from messy spreadsheet to measurable value.</p>
+      </div>
+
+      <div class="reel-meta" aria-hidden="true"><span><i class="dot rec"></i>fig. 1b · showreel.mp4</span><span>1920×1080 · 24 fps · 8 chapters · 02:00</span></div>
+      <div class="reel-stage" id="reelStage">
+        <canvas class="reel-glow" id="reelGlow" width="32" height="18" aria-hidden="true"></canvas>
+        <div class="reel-screen" id="reelScreen">
+          <video class="reel-teaser" id="reelTeaser" src="media/showreel/teaser.mp4" poster="media/showreel/poster.webp" muted loop playsinline preload="metadata" aria-hidden="true"></video>
+          <video class="reel-main" id="reelMain" poster="media/showreel/poster.webp" playsinline preload="none" aria-label="Tony Mulunda portfolio showreel, 2 minutes">
+            <source src="media/showreel/showreel.mp4" type="video/mp4">
+          </video>
+          <span class="vf tl" aria-hidden="true"></span><span class="vf tr" aria-hidden="true"></span><span class="vf bl" aria-hidden="true"></span><span class="vf br" aria-hidden="true"></span>
+          <button class="reel-play" id="reelPlay" type="button" aria-label="Play the showreel with sound">
+            <svg class="reel-ring" viewBox="0 0 200 200" aria-hidden="true"><defs><path id="reelCircle" d="M100,100 m-78,0 a78,78 0 1,1 156,0 a78,78 0 1,1 -156,0"/></defs><text><textPath href="#reelCircle">PLAY THE SHOWREEL · SOUND ON · 02:00 · PLAY THE SHOWREEL · SOUND ON · 02:00 ·</textPath></text></svg>
+            <span class="reel-play-core" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5.5v13l10.5-6.5z" fill="currentColor"/></svg></span>
+          </button>
+          <div class="reel-end" id="reelEnd" hidden>
+            <p class="mono">-- end of reel</p>
+            <h3>Got a messy spreadsheet?<br><span>Let's talk.</span></h3>
+            <div class="reel-end-cta">
+              <a class="btn primary" href="#contact">Get in touch <span class="arr" aria-hidden="true">→</span></a>
+              <a class="btn on-dark" href="#work">See the work</a>
+              <button class="btn on-dark" id="reelReplay" type="button">↺ Replay</button>
+            </div>
+          </div>
+          <button class="reel-undock" id="reelUndock" type="button" aria-label="Pause and close the mini player">✕</button>
+          <span class="reel-mini-prog" aria-hidden="true"></span>
+        </div>
+      </div>
+
+      <div class="reel-ctrl" id="reelCtrl">
+        <button class="reel-btn" id="reelToggle" type="button" aria-label="Play">
+          <svg class="i-play" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13l10.5-6.5z" fill="currentColor"/></svg>
+          <svg class="i-pause" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 5h3.5v14H7zM13.5 5H17v14h-3.5z" fill="currentColor"/></svg>
+        </button>
+        <div class="reel-wave" id="reelWave" role="slider" tabindex="0" aria-label="Seek" aria-valuemin="0" aria-valuemax="120" aria-valuenow="0" aria-valuetext="0:00 of 2:00">
+          <div class="reel-bars" id="reelBars" aria-hidden="true"></div>
+          <div class="reel-ticks" id="reelTicks" aria-hidden="true"></div>
+          <span class="reel-head-line" id="reelHeadLine" aria-hidden="true"></span>
+          <span class="reel-tip" id="reelTip" aria-hidden="true"></span>
+        </div>
+        <span class="reel-time mono" id="reelTime">00:00 / 02:00</span>
+        <button class="reel-btn" id="reelMute" type="button" aria-label="Mute" aria-pressed="false">
+          <svg class="i-vol" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M4 9.5h3.5L12 5.5v13l-4.5-4H4z" fill="currentColor" stroke="none"/><path d="M15.5 9a4.2 4.2 0 0 1 0 6M18.2 6.5a8 8 0 0 1 0 11"/></svg>
+          <svg class="i-mute" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M4 9.5h3.5L12 5.5v13l-4.5-4H4z" fill="currentColor" stroke="none"/><path d="M16 9.5l5 5M21 9.5l-5 5"/></svg>
+        </button>
+        <button class="reel-btn" id="reelFull" type="button" aria-label="Full screen">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/></svg>
+        </button>
+      </div>
+
+      <ol class="reel-chapters" id="reelChapters" aria-label="Chapters"></ol>
     </div>
   </div>
 </section>
@@ -443,6 +510,7 @@
 
 <script src="js/projects.js"></script>
 <script src="js/script.js"></script>
+<script src="js/reel.js"></script>
 
 </body>
 </html>
