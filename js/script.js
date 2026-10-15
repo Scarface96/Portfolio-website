@@ -271,7 +271,7 @@
     $('#lbKick').textContent = p.kick; $('#lbTitle').textContent = p.title; $('#lbDesc').textContent = p.desc;
     $('#lbPos').textContent = pad(cur + 1) + ' / ' + PROJECTS.length;
     $('#lbStack').innerHTML = p.stack.map(s => '<li>' + s + '</li>').join('');
-    $('#lbLinks').innerHTML = '<a class="pri" href="' + p.repo + '" target="_blank" rel="noopener">View repository ↗</a>' + (p.live ? '<a href="' + p.live + '" target="_blank" rel="noopener">Live demo ↗</a>' : '');
+    $('#lbLinks').innerHTML = '<a class="pri" href="' + p.repo + '" target="_blank" rel="noopener">View repository ↗</a>' + (p.live ? '<a href="' + p.live + '" target="_blank" rel="noopener">Live demo ↗</a>' : '') + (p.bi ? '<a href="' + p.bi + '" target="_blank" rel="noopener">' + p.biLabel + ' ↗</a>' : '');
     thumbs.innerHTML = items.map((it, k) => '<button type="button" role="listitem" class="lb-thumb" aria-label="Show ' + it.cap.replace(/"/g, '') + '"><img src="' + it.thumb + '" alt="" loading="lazy">' + (it.type === 'video' ? '<span class="pl">▶</span>' : '') + '</button>').join('');
     $$('.lb-thumb', thumbs).forEach((t, k) => t.addEventListener('click', () => showMedia(k)));
     showMedia(0, false);

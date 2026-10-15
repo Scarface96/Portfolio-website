@@ -169,6 +169,7 @@ section{scroll-margin-top:72px}
 .card-link .arr{display:inline-block;transition:transform .35s var(--ease)}
 .card:hover .card-link.stretch .arr,.card-link:hover .arr{transform:translate(3px,-3px)}
 .card-link.live{color:var(--teal);z-index:3}
+.card-link.bi{z-index:3}
 .card[hidden]{display:none}
 
 /* project media */
