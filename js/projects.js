@@ -37,7 +37,9 @@ const PROJECTS = [
     ],
     "video": "media/churn/video.mp4",
     "vkind": "recording",
-    "live": "https://scarface96.github.io/Bank-Customer-Churn-Classification/"
+    "live": "https://scarface96.github.io/Bank-Customer-Churn-Classification/",
+    "bi": "https://github.com/Scarface96/Bank-Customer-Churn-Classification/blob/main/bi/README.md",
+    "biLabel": "Tableau & Power BI kit"
   },
   {
     "slug": "toy",
@@ -74,7 +76,9 @@ const PROJECTS = [
     ],
     "video": "media/toy/video.mp4",
     "vkind": "recording",
-    "live": "https://scarface96.github.io/Toy-Store-KPI-Report/"
+    "live": "https://scarface96.github.io/Toy-Store-KPI-Report/",
+    "bi": "https://github.com/Scarface96/Toy-Store-KPI-Report/blob/main/bi/README.md",
+    "biLabel": "Tableau kit"
   },
   {
     "slug": "b2b",
@@ -111,7 +115,9 @@ const PROJECTS = [
     ],
     "video": "media/b2b/video.mp4",
     "vkind": "recording",
-    "live": "https://scarface96.github.io/B2B-Sales-Pipeline-CRM-Dashboard-for-TechSolutions-Inc./"
+    "live": "https://scarface96.github.io/B2B-Sales-Pipeline-CRM-Dashboard-for-TechSolutions-Inc./",
+    "bi": "https://github.com/Scarface96/B2B-Sales-Pipeline-CRM-Dashboard-for-TechSolutions-Inc./blob/main/bi/README.md",
+    "biLabel": "Tableau & Power BI kit"
   },
   {
     "slug": "co2",
@@ -148,7 +154,9 @@ const PROJECTS = [
     ],
     "video": "media/co2/video.mp4",
     "vkind": "recording",
-    "live": "https://scarface96.github.io/Global-CO2-Emissions-Dashboard/"
+    "live": "https://scarface96.github.io/Global-CO2-Emissions-Dashboard/",
+    "bi": "https://github.com/Scarface96/Global-CO2-Emissions-Dashboard/blob/main/bi/README.md",
+    "biLabel": "Power BI kit"
   },
   {
     "slug": "hr",
@@ -185,7 +193,9 @@ const PROJECTS = [
     ],
     "video": "media/hr/video.mp4",
     "vkind": "recording",
-    "live": "https://scarface96.github.io/HR-Analysis-Dashboard/"
+    "live": "https://scarface96.github.io/HR-Analysis-Dashboard/",
+    "bi": "https://github.com/Scarface96/HR-Analysis-Dashboard/blob/main/bi/README.md",
+    "biLabel": "Power BI kit"
   },
   {
     "slug": "retail",
@@ -222,7 +232,9 @@ const PROJECTS = [
     ],
     "video": "media/retail/video.mp4",
     "vkind": "recording",
-    "live": "https://scarface96.github.io/sql_retail_sales_p1/"
+    "live": "https://scarface96.github.io/sql_retail_sales_p1/",
+    "bi": "https://github.com/Scarface96/sql_retail_sales_p1/blob/main/bi/README.md",
+    "biLabel": "Tableau & Power BI kit"
   },
   {
     "slug": "netflix",
@@ -421,7 +433,9 @@ const PROJECTS = [
       }
     ],
     "video": "media/airbnb/video.mp4",
-    "vkind": "reel"
+    "vkind": "reel",
+    "bi": "https://github.com/Scarface96/AirBnB-Listing-Analysis-Review/blob/main/bi/README.md",
+    "biLabel": "Tableau & Power BI guide"
   },
   {
     "slug": "restaurant",
@@ -458,7 +472,9 @@ const PROJECTS = [
     ],
     "video": "media/restaurant/video.mp4",
     "vkind": "recording",
-    "live": "https://scarface96.github.io/Restaurant-Order-Analysis/"
+    "live": "https://scarface96.github.io/Restaurant-Order-Analysis/",
+    "bi": "https://github.com/Scarface96/Restaurant-Order-Analysis/blob/main/bi/README.md",
+    "biLabel": "Tableau & Power BI kit"
   },
   {
     "slug": "covid",
@@ -495,21 +511,9 @@ const PROJECTS = [
     ],
     "video": "media/covid/video.mp4",
     "vkind": "recording",
-    "live": "https://scarface96.github.io/covid-project/"
-  },
-  {
-    "slug": "customer",
-    "title": "Customer Purchase Behaviour",
-    "kick": "Analysis · in progress",
-    "stack": [
-      "Python"
-    ],
-    "desc": "An analysis of customer purchase behaviour. This repository is still in progress, with documentation and implementation to follow.",
-    "repo": "https://github.com/Scarface96/Customer_purchase_behaviour",
-    "cover": "media/customer/cover.webp",
-    "gallery": [],
-    "video": null,
-    "vkind": null
+    "live": "https://scarface96.github.io/covid-project/",
+    "bi": "https://github.com/Scarface96/covid-project/blob/main/bi/README.md",
+    "biLabel": "Tableau & Power BI kit"
   },
   {
     "slug": "ecommerce",
